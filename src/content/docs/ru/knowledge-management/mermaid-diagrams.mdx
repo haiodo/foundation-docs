@@ -1,28 +1,28 @@
 ---
-title: Mermaid diagrams
-description: Learn how to create diagrams with MermaidJS.
+title: Диаграммы Mermaid
+description: Узнайте, как создавать диаграммы с помощью MermaidJS.
 ---
 
 import { Image } from "astro:assets";
 import mermaid from "../../../../assets/screenshots/huly/documents-mermaid.png";
 
-Foundation supports the creation of diagrams using MermaidJS, a simple markdown-like language for generating diagrams and flowcharts. For specific syntax and examples of different kinds of diagrams you can create, see the [MermaidJS documentation](https://mermaid.js.org/intro/).
+Foundation поддерживает создание диаграмм с использованием MermaidJS — простого языка, похожего на markdown, для генерации диаграмм и блок-схем. Для получения информации о конкретном синтаксисе и примерах различных видов диаграмм, которые вы можете создать, см. [документацию MermaidJS](https://mermaid.js.org/intro/).
 
 <Image
   src={mermaid}
-  alt="Diagram created with MermaidJS"
+  alt="Диаграмма, созданная с помощью MermaidJS"
   inferSize
   quality="max"
 />
 
-## Creating a diagram
+## Создание диаграммы
 
-To create a diagram in a document, type `/` and select `Diagram`. This will open a dialog where you can enter your MermaidJS code.
+Чтобы создать диаграмму в документе, введите `/` и выберите `Диаграмма`. Откроется диалоговое окно, где вы можете ввести код MermaidJS.
 
-When valid MermaidJS code is entered, the diagram will automatically render in the space below. Collapsing the code editor will leave only the diagram visible on the page.
+При вводе корректного кода MermaidJS диаграмма автоматически отобразится в пространстве ниже. Сворачивание редактора кода оставит на странице только видимую диаграмму.
 
-## Editing a diagram
+## Редактирование диаграммы
 
-To edit a diagram after it's been created, click the diagram to open the editor. This will allow you to make changes to the MermaidJS code, and you'll see the results in real time.
+Чтобы отредактировать диаграмму после её создания, нажмите на диаграмму, чтобы открыть редактор. Это позволит вам вносить изменения в код MermaidJS, и вы увидите результаты в реальном времени.
 
-> **Note:** Clicking on a diagram and pressing the delete key will remove the diagram from the document.
+> **Примечание:** Нажатие на диаграмму и нажатие клавиши удаления удалит диаграмму из документа.

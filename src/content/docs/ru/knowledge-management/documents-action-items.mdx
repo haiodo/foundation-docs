@@ -1,27 +1,29 @@
 ---
-title: Action items in documents
-description: Learn how to create and assign action items in documents.
+title: Активности в документах
+description: Узнайте, как создавать и назначать активности в документах.
 ---
 
 import { Image } from 'astro:assets';
 import documentAssignee from '../../../../assets/screenshots/huly/documents-assignee.png';
 
-Sometimes, you may wish to create action items for team members directly within a document, without attaching it to any particular issue in the Tracker. This can be helpful for small tasks that don't require a full issue, reminders, or other matters that need to be taken care of that aren't specificially related to a project or issue.
+Иногда вам может понадобиться создать активности для членов команды непосредственно в документе, не привязывая их к какой-либо конкретной задаче в Трекере. Это может быть полезно для небольших задач, которые не требуют полноценной задачи, напоминаний или других дел, которые нужно выполнить и которые не связаны конкретно с проектом или задачей.
 
-## Creating action items
-There are a few ways to create action items directly in documents:
-- **Keyboard shortcut** - Type `[]` then `space` on a new line. An empty checkbox will appear.
-- **Floating toolbar** - Hover over text and click the `+` icon that appears on the left side. Select the checkbox icon to create a new action item.
-- **Slash command** - Type `/` to open a dropdown menu of options. Select the checkbox icon to create a new action item.
+## Создание активностей
 
-## Assigning action items
-After an action item has been created using any of the methods above, you can assign it to a team member. Notice a gray profile icon that appears to the left of the checkbox. Click this icon to select a team member to assign the task to.
+Есть несколько способов создать активности непосредственно в документах:
+- **Сочетание клавиш** — введите `[]`, затем `пробел` на новой строке. Появится пустой чекбокс.
+- **Плавающая панель инструментов** — наведите курсор на текст и нажмите на значок `+`, который появится слева. Выберите значок чекбокса, чтобы создать новую активность.
+- **Слеш-команда** — введите `/`, чтобы открыть выпадающее меню опций. Выберите значок чекбокса, чтобы создать новую активность.
+
+## Назначение активностей
+
+После создания активности любым из вышеперечисленных способов вы можете назначить её члену команды. Обратите внимание на серый значок профиля, который появляется слева от чекбокса. Нажмите на этот значок, чтобы выбрать члена команды для назначения задачи.
 
 <Image 
 src={documentAssignee} 
-alt='Assigning an action item in a document' 
+alt='Назначение активности в документе' 
 inferSize
 quality='max'
 />
 
-When an action item is assigned to a team member within a document, that person will receive a notification that they have been assigned an action item, and they'll be able to schedule the task in their Planner.
+Когда активность назначается члену команды в документе, этот человек получит уведомление о том, что ему назначена активность, и он сможет запланировать задачу в своём Планировщике.

@@ -1,6 +1,6 @@
 ---
-title: Human resources
-description: Learn how to use the human resources module in Foundation.
+title: Управление персоналом
+description: Узнайте, как использовать модуль управления персоналом в Foundation.
 ---
 
 import LocalVideo from "../../../../components/LocalVideo.astro";
@@ -9,49 +9,49 @@ import humanResources from "../../../../assets/screenshots/huly/human-resources.
 
 <LocalVideo id="VsM_VuYh2YA" posterQuality="max" />
 
-The human resources module in Foundation allows you to manage scheduling and basic time tracking across your departments. This module is still in development, so some features are not yet complete. We welcome any feedback you have as we continue to improve our offerings in this area. For now, continue reading to learn how to get the most out of the human resources module in its current implementation!
+Модуль управления персоналом в Foundation позволяет управлять расписанием и базовым учётом времени в ваших отделах. Этот модуль всё ещё находится в разработке, поэтому некоторые функции ещё не завершены. Мы приветствуем любую обратную связь, пока продолжаем улучшать наши предложения в этой области. А пока продолжайте читать, чтобы узнать, как получить максимальную отдачу от модуля управления персоналом в его текущей реализации!
 
-## Setting up departments
+## Настройка отделов
 
-Departments can be added within your organization by hovering over `DEPARTMENTS` in the left side menu and clicking `Create department`. Enter a name for the department, select a team lead (if applicable), and click `Create`.
+Отделы могут быть добавлены в вашу организацию, наведя курсор на `ОТДЕЛЫ` в левом боковом меню и нажав `Создать отдел`. Введите название отдела, выберите руководителя команды (если применимо) и нажмите `Создать`.
 
-Hover over any department, open the settings menu and click `Open` to view that department's details. From here, you can add information to the department, such as external links, file attachments, and description. You can add members, subscribers and managers and change the team lead from this view.
+Наведите курсор на любой отдел, откройте меню настроек и нажмите `Открыть`, чтобы просмотреть детали этого отдела. Отсюда вы можете добавить информацию к отделу, такую как внешние ссылки, вложения файлов и описание. Вы можете добавить участников, подписчиков и менеджеров, а также изменить руководителя команды из этого представления.
 
-> **Note:** A member can also be added to a department from their contact page.
+> **Примечание:** Участник также может быть добавлен в отдел с его страницы контакта.
 
-You can create as many departments as you like to reflect your organizational structure, including departments nested within other departments.
+Вы можете создать столько отделов, сколько хотите, чтобы отразить вашу организационную структуру, включая отделы, вложенные в другие отделы.
 
-## Viewing the HR schedule
+## Просмотр расписания HR
 
 <Image
   src={humanResources}
-  alt="Human resources schedule"
+  alt="Расписание управления персоналом"
   inferSize
   quality="max"
 />
 
-You can view the HR schedule for the entire organization or for a specific department.
+Вы можете просматривать расписание HR для всей организации или для конкретного отдела.
 
-The following items can be tracked on the schedule:
+Следующие элементы могут отслеживаться в расписании:
 
-- Vacation days
-- Sick days
-- PTO
-- PTO/2
-- Overtime
-- Overtime/2
-- Remote days
+- Отпускные дни
+- Больничные дни
+- Отгулы (PTO)
+- Отгулы/2 (PTO/2)
+- Сверхурочные
+- Сверхурочные/2
+- Удалённые дни
 
-By default, the schedule shows all tracked items for the current month next for each team member. Hovering over any block will reveal more details. It is also possible to view the schedule for the entire year by clicking `Year` in the top right corner. This view displays the total items tracked for each team member for each month. Hovering over any block reveals a list of that team member's tracked items for that month.
+По умолчанию расписание показывает все отслеживаемые элементы за текущий месяц для каждого члена команды. Наведение курсора на любой блок покажет дополнительные детали. Также можно просмотреть расписание за весь год, нажав `Год` в правом верхнем углу. Это представление отображает общее количество отслеживаемых элементов для каждого члена команды за каждый месяц. Наведение курсора на любой блок показывает список отслеживаемых элементов этого члена команды за этот месяц.
 
-> **Note:** Foundation does not currently offer pre-defined workflows for manual approval of time off requests. This feature allows team members to record their time off and remote work for visibility, rather than being integrated into a formal tracking system.
+> **Примечание:** Foundation в настоящее время не предлагает предопределённые рабочие процессы для ручного утверждения запросов на отгулы. Эта функция позволяет членам команды записывать своё время отдыха и удалённую работу для видимости, а не интегрироваться в формальную систему отслеживания.
 
-## Adding an item to the schedule
+## Добавление элемента в расписание
 
-To add any of the items listed above, click anywhere in the row next to your name in the month view of the schedule. From here, you can select the kind of item you'd like to add. Enter a description and upload any attachments needed. Select the start and end date as applicable. Click `Create` and notice a block added to the schedule.
+Чтобы добавить любой из перечисленных выше элементов, нажмите в любом месте строки рядом с вашим именем в представлении месяца расписания. Отсюда вы можете выбрать тип элемента, который хотите добавить. Введите описание и загрузите любые необходимые вложения. Выберите дату начала и окончания по мере необходимости. Нажмите `Создать` и обратите внимание на добавленный блок в расписании.
 
-## Viewing the HR table
+## Просмотр таблицы HR
 
-Selecting the table view in the top left corner allows you to see reporting for each team member. This view shows totals for vacation days, sick days, PTO, overtime and remote days, as well as calculations based on the number of tasks completed. 
+Выбор табличного представления в верхнем левом углу позволяет видеть отчётность для каждого члена команды. Это представление показывает итоги по отпускным дням, больничным дням, отгулам, сверхурочным и удалённым дням, а также расчёты на основе количества выполненных задач.
 
-> **Note:** This early implementation of time tracking in Foundation is still in development, so we suggest using this feature as a general guide rather than a precise tracking tool until the functionality is complete.
+> **Примечание:** Эта ранняя реализация учёта времени в Foundation всё ещё находится в разработке, поэтому мы рекомендуем использовать эту функцию как общее руководство, а не как точный инструмент отслеживания, пока функциональность не будет завершена.

@@ -1,42 +1,42 @@
 ---
-title: Space types
-description: Learn how to customize your workspace with space types.
+title: Типы пространств
+description: Узнайте, как настроить рабочее пространство с помощью типов пространств.
 ---
 
 import { Image } from "astro:assets";
 import settingsCustomProjectType from "../../../../assets/screenshots/huly/settings-custom-project-type.png";
 
-## What are space types?
+## Что такое типы пространств?
 
-Space types are the highest level of customization in Foundation. They define the structure of your workspace by applying a shared set of roles and task types to all spaces created with that type.
+Типы пространств — это высший уровень настройки в Foundation. Они определяют структуру вашего рабочего пространства, применяя общий набор ролей и типов задач ко всем пространствам, созданным с этим типом.
 
-The tracker in Foundation is based on the `Classic project` space type. This space type comes with no preset roles, and one task type (`Issue`) with process states of `Backlog`, `Todo`, `In Progress`, `Done` and `Canceled`. By default, new projects created in the tracker will use this space type.
+Трекер в Foundation основан на типе пространства `Классический проект`. Этот тип пространства поставляется без предустановленных ролей и с одним типом задач (`Задача`) со статусами процесса `Бэклог`, `К выполнению`, `В работе`, `Готово` и `Отменено`. По умолчанию новые проекты, созданные в трекере, будут использовать этот тип пространства.
 
-However, you may wish to create your own space types to model different types of processes that you'll be tracking in your workspace. For example, you could create space types for "Client projects", "Internal projects" and "Bug tracking", each of which could have its own [roles](/ru/advanced-settings/roles) and [task types](/ru/advanced-settings/task-types).
+Однако вы можете захотеть создать собственные типы пространств для моделирования различных типов процессов, которые вы будете отслеживать в своём рабочем пространстве. Например, вы можете создать типы пространств для «Клиентских проектов», «Внутренних проектов» и «Отслеживания ошибок», каждый из которых может иметь свои собственные [роли](/ru/advanced-settings/roles) и [типы задач](/ru/advanced-settings/task-types).
 
-## Customizing default space types
+## Настройка типов пространств по умолчанию
 
-You can find all of the settings for your space types under `Settings` in the left sidebar menu. Click on `SPACE TYPES` to see a list of all space types available in your workspace. Click on any space type to view and edit its settings.
+Все настройки типов пространств находятся в разделе `Настройки` в меню левой боковой панели. Нажмите на `ТИПЫ ПРОСТРАНСТВ`, чтобы увидеть список всех типов пространств, доступных в вашем рабочем пространстве. Нажмите на любой тип пространства, чтобы просмотреть и отредактировать его настройки.
 
-Some properties and attributes for spaces are not currently customizable. Settings in the first block cannot be changed, but you can customize each space type's [roles](/ru/advanced-settings/roles) and task types [here](/ru/advanced-settings/task-types).
+Некоторые свойства и атрибуты пространств в настоящее время не настраиваются. Настройки в первом блоке не могут быть изменены, но вы можете настроить [роли](/ru/advanced-settings/roles) и типы задач каждого типа пространства [здесь](/ru/advanced-settings/task-types).
 
-## Creating custom space types
+## Создание пользовательских типов пространств
 
-To create a new space type, click the `+` button next to `SPACE TYPES` in the left sidebar menu of your settings.
+Чтобы создать новый тип пространства, нажмите кнопку `+` рядом с `ТИПЫ ПРОСТРАНСТВ` в меню левой боковой панели настроек.
 
-In the top left corner, select what kind of space you'd like to create a space type for. If you choose `Tracker`, you'll also have the option to base your space type on the `Classic project`.
+В левом верхнем углу выберите, для какого вида пространства вы хотите создать тип пространства. Если вы выберете `Трекер`, у вас также будет возможность основать тип пространства на `Классическом проекте`.
 
-Once your custom space type has been created, you can add [roles](/ru/advanced-settings/roles) and task types [here](/ru/advanced-settings/task-types).
+После создания пользовательского типа пространства вы можете добавить [роли](/ru/advanced-settings/roles) и типы задач [здесь](/ru/advanced-settings/task-types).
 
-## Using your custom space type
+## Использование пользовательского типа пространства
 
-Custom space types cannot be used for existing projects. To use your custom space type, you'll need to create a new project and select your custom space type from the `Space type` dropdown menu.
+Пользовательские типы пространств не могут использоваться для существующих проектов. Чтобы использовать пользовательский тип пространства, вам нужно создать новый проект и выбрать пользовательский тип пространства из выпадающего меню `Тип пространства`.
 
 <Image
   src={settingsCustomProjectType}
-  alt="Using a custom project type"
+  alt="Использование пользовательского типа проекта"
   inferSize
   quality="max"
 />
 
-If you've added roles, you'll be able to add members to each role when you create your project.
+Если вы добавили роли, вы сможете добавлять участников к каждой роли при создании проекта.

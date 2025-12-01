@@ -1,36 +1,36 @@
 ---
-title: Drive
-description: Learn how to use Drive for file storage and sharing.
+title: Диск
+description: Узнайте, как использовать Диск для хранения и обмена файлами.
 ---
 
 import { Image } from 'astro:assets';
 import drivePreview from '../../../../assets/screenshots/huly/drive-preview.png';
 
-Drive is a robust and versatile file storage system fully customizable to your team's needs. Store any type of file directly within your workspace and keep everything organized with customizable folders and privacy settings. Files stored in Drive are easily accessible for viewing, printing and downloading, allowing teams to efficiently share resources and promote collaboration. Teams can add members to specific Drive spaces, ensuring everyone has access to the files they need without compromising security.
+Диск — это надёжная и универсальная система хранения файлов, полностью настраиваемая под потребности вашей команды. Храните любые типы файлов непосредственно в вашем рабочем пространстве и организуйте всё с помощью настраиваемых папок и параметров конфиденциальности. Файлы, хранящиеся на Диске, легко доступны для просмотра, печати и скачивания, что позволяет командам эффективно обмениваться ресурсами и способствовать сотрудничеству. Команды могут добавлять участников к определённым пространствам Диска, гарантируя, что каждый имеет доступ к нужным файлам без ущерба для безопасности.
 
-## Creating your Drive
+## Создание вашего Диска
 
-Your Foundation workspace comes with one existing Drive called "Records"; however, you can add as many Drives as you'd like and customize them to suit the needs of your team.
+Ваше рабочее пространство Foundation поставляется с одним существующим Диском под названием «Записи»; однако вы можете добавить столько Дисков, сколько хотите, и настроить их в соответствии с потребностями вашей команды.
 
-To create a Drive, click the dropdown arrow next to the `+ Upload File` button and select `Create Drive`, or hover over the word "Drive" in the sidebar and click the `+` icon that appears. Enter a name and optional description for your Drive, select the owners and members, and toggle privacy settings. Then, click `Create`.
+Чтобы создать Диск, нажмите на стрелку раскрывающегося списка рядом с кнопкой `+ Загрузить файл` и выберите `Создать диск`, или наведите курсор на слово «Диск» в боковой панели и нажмите появившийся значок `+`. Введите название и необязательное описание для вашего Диска, выберите владельцев и участников, а также настройте параметры конфиденциальности. Затем нажмите `Создать`.
 
-## Adding folders
+## Добавление папок
 
-You can further organize your Drives into folders containing files. To create a new folder, click the breadcrumb icon that appears when hovering over the name of your Drive in the left sidebar. Alternatively, click the dropdown arrow next to the `+ Upload File` button and select `Create Folder`. Enter a name for your folder and click `Create`.
+Вы можете дополнительно организовать свои Диски в папки, содержащие файлы. Чтобы создать новую папку, нажмите на значок хлебных крошек, который появляется при наведении на название вашего Диска в левой боковой панели. В качестве альтернативы нажмите на стрелку раскрывающегося списка рядом с кнопкой `+ Загрузить файл` и выберите `Создать папку`. Введите название для вашей папки и нажмите `Создать`.
 
-## Uploading files and folders
+## Загрузка файлов и папок
 
-To upload a file or folder to your Drive, click the `+ Upload File` button at the top of the Drive sidebar. Select the file or multiple files you'd like to upload from your computer, or drag and drop them into the upload area. Once the files have been uploaded, they will appear listed in your Drive.
+Чтобы загрузить файл или папку на ваш Диск, нажмите кнопку `+ Загрузить файл` в верхней части боковой панели Диска. Выберите файл или несколько файлов, которые хотите загрузить с вашего компьютера, или перетащите их в область загрузки. После загрузки файлов они появятся в списке на вашем Диске.
 
-To view a file, click on the file name in your Drive. Several options are available for files in drive:
+Чтобы просмотреть файл, нажмите на название файла на вашем Диске. Для файлов на диске доступны несколько опций:
 
-- **Rename your file** - open the right sidebar and click on the file name to rename it.
-- **Download** - click the download icon to download the file to your computer.
-- **Move**  - open the settings menu and select `Move` to change the parent folder or Drive for your file.
+- **Переименовать файл** — откройте правую боковую панель и нажмите на название файла, чтобы переименовать его.
+- **Скачать** — нажмите на значок скачивания, чтобы скачать файл на ваш компьютер.
+- **Переместить** — откройте меню настроек и выберите `Переместить`, чтобы изменить родительскую папку или Диск для вашего файла.
 
-## Creating file versions
+## Создание версий файлов
 
-Foundation automatically creates a record of a file versions when a new version is uploaded. After a file has been modified, it can be added to the original file as a new version using the upload button in the top right corner of any file preview. Each new version is listed under the original file for easy access:
+Foundation автоматически создаёт запись версий файла при загрузке новой версии. После изменения файла его можно добавить к исходному файлу как новую версию с помощью кнопки загрузки в правом верхнем углу любого предпросмотра файла. Каждая новая версия отображается под исходным файлом для быстрого доступа:
 
 <div style="position: relative; padding-top: 56.25%;">
   <iframe
@@ -42,15 +42,15 @@ Foundation automatically creates a record of a file versions when a new version 
   ></iframe>
 </div>
 
-## Adding comments
+## Добавление комментариев
 
 <Image 
 src={drivePreview} 
-alt='Preview of a file in Drive' 
+alt='Предпросмотр файла на Диске' 
 inferSize
 quality='max'
 />
 
-You can add comments on files in the Activity section below the file preview. Just like anywhere else in the Foundation platform, comments support markdown formatting, attachments, mentions, emojis and text templates. Comments can be used to provide feedback, ask questions, or discuss the contents of the file. Just like other objects in the Foundation platform, activity related to files can be accessed from Chat as well, allowing you to keep track of discussions and changes all in one place.
+Вы можете добавлять комментарии к файлам в разделе Активность под предпросмотром файла. Как и в любом другом месте платформы Foundation, комментарии поддерживают форматирование markdown, вложения, упоминания, эмодзи и текстовые шаблоны. Комментарии можно использовать для предоставления обратной связи, задавания вопросов или обсуждения содержимого файла. Как и другие объекты на платформе Foundation, активность, связанная с файлами, также доступна из Чата, что позволяет вам отслеживать обсуждения и изменения в одном месте.
 
-See our guide on [activity tracking in chat](/ru/communication/chat-activity) to learn more about how comments on your Drive files are connected to the rest of your workspace.
+См. наше руководство по [отслеживанию активности в чате](/ru/communication/chat-activity), чтобы узнать больше о том, как комментарии к вашим файлам на Диске связаны с остальным рабочим пространством.

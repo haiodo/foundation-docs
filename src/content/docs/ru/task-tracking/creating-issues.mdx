@@ -1,64 +1,64 @@
 ---
-title: Creating issues
-description: Learn how to create an issue in your Foundation workspace.
+title: Создание задач
+description: Узнайте, как создать задачу в вашем рабочем пространстве Foundation.
 ---
 
 import { Image } from "astro:assets";
 import LocalVideo from "../../../../components/LocalVideo.astro";
 import createIssue from "../../../../assets/screenshots/huly/tracker-create-issue.png";
 
-## What are issues?
+## Что такое задачи?
 
-Issues represent specific tasks that need to be completed. Issues can be broken down into sub-issues for smaller tasks that need to be completed to accomplish the parent issue. Issues are organized into projects, which define distinct spaces that contain your tasks.
+Задачи представляют собой конкретные работы, которые необходимо выполнить. Задачи могут быть разбиты на подзадачи для более мелких работ, которые необходимо выполнить для завершения родительской задачи. Задачи организованы в проекты, которые определяют отдельные пространства, содержащие ваши задачи.
 
-> **Note:** Whenever an issue is created with a status of "Todo" and is assigned to a team member, the system automatically generates an [action item](/ru/task-tracking/creating-action-items) in that member's Planner, allowing them to add it to their own schedule.
+> **Примечание:** Всякий раз, когда задача создаётся со статусом «К выполнению» и назначается участнику команды, система автоматически создаёт [активность](/ru/task-tracking/creating-action-items) в Планировщике этого участника, позволяя ему добавить её в своё расписание.
 
-## Creating an issue
+## Создание задачи
 
-Select the Tracker view by clicking the checkbox icon on the left sidebar, and ensure the side panel is open by clicking the horizontal lines at the top left.
+Выберите представление Трекера, нажав на значок галочки на левой боковой панели, и убедитесь, что боковая панель открыта, нажав на горизонтальные линии в верхнем левом углу.
 
-Click the blue `+ New issue` button at the top of the side panel. This will open a dialog where you can enter some initial settings for your issue. After entering your desired settings, click `Create issue`.
+Нажмите синюю кнопку `+ Новая задача` в верхней части боковой панели. Откроется диалоговое окно, где вы можете ввести начальные настройки для вашей задачи. После ввода желаемых настроек нажмите `Создать задачу`.
 
-> **Note:** If you navigate away while creating an issue, you'll notice that the `+ New issue` button becomes `+ Resume draft`. Click this to re-open the issue you were working on.
+> **Примечание:** Если вы уйдёте со страницы во время создания задачи, вы заметите, что кнопка `+ Новая задача` станет `+ Продолжить черновик`. Нажмите на неё, чтобы снова открыть задачу, над которой вы работали.
 
-<Image src={createIssue} alt="Create issue" inferSize quality="max" />
+<Image src={createIssue} alt="Создание задачи" inferSize quality="max" />
 
-## Issue settings
+## Настройки задачи
 
-When creating or editing an issue, you can configure the following settings:
+При создании или редактировании задачи вы можете настроить следующие параметры:
 
-**Project**: In the top left corner of the dialog, you will see the project that this issue is associated with. Click on the name of the project to see a dropdown where you can choose to select a different project to associate with this issue.
+**Проект**: В верхнем левом углу диалогового окна вы увидите проект, с которым связана эта задача. Нажмите на название проекта, чтобы увидеть выпадающий список, где вы можете выбрать другой проект для связи с этой задачей.
 
-**Issue title**: A title for your issue.
+**Название задачи**: Название вашей задачи.
 
-**Description**: A description of your issue. Descriptions may be formatted with markdown formatting, including headers, codeblocks, links and more.
+**Описание**: Описание вашей задачи. Описания могут быть отформатированы с использованием markdown-разметки, включая заголовки, блоки кода, ссылки и многое другое.
 
-**Issue status**: Setting the issue status to "Todo" (and adding an assignee) will automatically generate an [action item](/ru/task-tracking/creating-action-items) in that member's Planner
+**Статус задачи**: Установка статуса задачи «К выполнению» (и добавление исполнителя) автоматически создаст [активность](/ru/task-tracking/creating-action-items) в Планировщике этого участника.
 
-**Priority**: Choose from No priority, Low, Medium, High or Urgent.
+**Приоритет**: Выберите из вариантов: Без приоритета, Низкий, Средний, Высокий или Срочный.
 
-**Assignee**: Select a member to assign this issue to.
+**Исполнитель**: Выберите участника, которому назначить эту задачу.
 
-**Labels**: Add labels for this issue or add new ones. This is optional, but can be helpful for sorting issues later. To learn more about managing labels, take a look at [this guide](/ru/task-tracking/labels).
+**Метки**: Добавьте метки для этой задачи или создайте новые. Это необязательно, но может быть полезно для сортировки задач позже. Чтобы узнать больше об управлении метками, ознакомьтесь с [этим руководством](/ru/task-tracking/labels).
 
-**Estimation**: Add an estimation for how long this issue will take to complete. This is optional, but is a helpful tool for workflow tracking and scheduling.
+**Оценка**: Добавьте оценку того, сколько времени потребуется для выполнения этой задачи. Это необязательно, но является полезным инструментом для отслеживания рабочего процесса и планирования.
 
-**Due date**: Select a due date for this issue. This is also optional.
+**Срок выполнения**: Выберите срок выполнения для этой задачи. Это также необязательно.
 
-**Set parent issue**: Make this issue the sub-issue of an existing issue. If the issue already has a parent, simply click the unset icon next to the parent issue to detach it.
+**Установить родительскую задачу**: Сделайте эту задачу подзадачей существующей задачи. Если у задачи уже есть родитель, просто нажмите значок отмены рядом с родительской задачей, чтобы отсоединить её.
 
-**Attach**: Attach a file, image or other media to this issue.
+**Прикрепить**: Прикрепите файл, изображение или другой медиафайл к этой задаче.
 
-## Tips for creating effective issues
+## Советы по созданию эффективных задач
 
-There are so many ways to customize issues to suit the needs of your specific projects and workflows! However, there are a few tips to keep in mind as you create issues for your team.
+Существует множество способов настроить задачи в соответствии с потребностями ваших конкретных проектов и рабочих процессов! Однако есть несколько советов, которые следует учитывать при создании задач для вашей команды.
 
-- Issues should be small in scope, representing a task assigned to just one person. For larger tasks, use sub-issues to break them down further.
-- Unless they are in backlog, all new issues should have a status of "Todo" to trigger the system to create an [action item](/ru/task-tracking/creating-action-items) for the assigned team member.
-- In keeping with best practices, an issue status should not need to be manually changed from "Todo" to "In Progress" or "Done". The status of an issue can automatically be determined by the assigned team member's action item status. For more on how this process is automated (and why), read more about action items (previously called "todos") <a href="https://huly.io/blog/capturing-dynamic-team-workflows-with-action-items" target="_blank">here</a>.
+- Задачи должны быть небольшими по объёму, представляя работу, назначенную только одному человеку. Для более крупных задач используйте подзадачи, чтобы разбить их на части.
+- Если они не находятся в бэклоге, все новые задачи должны иметь статус «К выполнению», чтобы система создала [активность](/ru/task-tracking/creating-action-items) для назначенного участника команды.
+- В соответствии с лучшими практиками, статус задачи не должен требовать ручного изменения с «К выполнению» на «В работе» или «Готово». Статус задачи может автоматически определяться статусом активности назначенного участника команды. Чтобы узнать больше о том, как этот процесс автоматизирован (и почему), прочитайте больше об активностях (ранее называвшихся «todos») <a href="https://huly.io/blog/capturing-dynamic-team-workflows-with-action-items" target="_blank">здесь</a>.
 
-## Dive deeper with our video tutorial
+## Углублённое изучение с нашим видеоуроком
 
-Check out our tutorial on task tracking in Foundation for a step-by-step guide on creating issues, assigning action items and getting the most out of task automations.
+Посмотрите наш урок по отслеживанию задач в Foundation для пошагового руководства по созданию задач, назначению активностей и получению максимальной отдачи от автоматизации задач.
 
 <LocalVideo id="ljpz0bZ75JA" posterQuality="max" />

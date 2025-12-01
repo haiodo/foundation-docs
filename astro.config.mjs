@@ -33,11 +33,11 @@ export default defineConfig({
                 translations: { en: "What is Foundation?" },
                 link: "/getting-started/introduction-platform/",
               },
-              {
-                label: "Что такое TraceX?",
-                translations: { en: "What is TraceX?" },
-                link: "/getting-started/introduction-tracex/",
-              },
+              // {
+              //   label: "Что такое TraceX?",
+              //   translations: { en: "What is TraceX?" },
+              //   link: "/getting-started/introduction-tracex/",
+              // },
               {
                 label: "Настройка рабочего пространства",
                 translations: { en: "Workspace setup" },
@@ -70,114 +70,114 @@ export default defineConfig({
               },
             ],
           },
-          {
-            label: "Карточки",
-            translations: { en: "Cards" },
-            collapsed: true,
-            items: [
-              {
-                label: "Введение в Карточки",
-                translations: { en: "Introduction to Cards" },
-                link: "/cards/cards-overview/",
-              },
-              {
-                label: "Создание карточек",
-                translations: { en: "Creating Cards" },
-                link: "/cards/creating-cards/",
-              },
-              {
-                label: "Родительские и дочерние карточки",
-                translations: { en: "Parent-child Cards" },
-                link: "/cards/parent-child-cards/",
-              },
-              {
-                label: "Просмотр, сортировка и фильтрация",
-                translations: { en: "View, sort and filter Cards" },
-                link: "/cards/view-sort-filter-cards/",
-              },
-              {
-                label: "Карточки vs. Документы",
-                translations: { en: "Cards vs. Documents" },
-                link: "/cards/cards-vs-documents/",
-              },
-              {
-                label: "Примеры использования",
-                translations: { en: "Use cases" },
-                link: "/cards/use-cases/",
-              },
-              {
-                label: "Типы",
-                translations: { en: "Types" },
-                collapsed: false,
-                items: [
-                  {
-                    label: "Что такое Типы?",
-                    translations: { en: "What are Types?" },
-                    link: "/cards/types/types-overview/",
-                  },
-                  {
-                    label: "Создание типов",
-                    translations: { en: "Creating Types" },
-                    link: "/cards/types/creating-types/",
-                  },
-                  {
-                    label: "Файловые типы",
-                    translations: { en: "File Types" },
-                    link: "/cards/types/file-types/",
-                  },
-                ],
-              },
-              {
-                label: "Теги",
-                translations: { en: "Tags" },
-                collapsed: false,
-                items: [
-                  {
-                    label: "Что такое Теги?",
-                    translations: { en: "What are Tags?" },
-                    link: "/cards/tags/tags-overview/",
-                  },
-                  {
-                    label: "Создание тегов",
-                    translations: { en: "Creating Tags" },
-                    link: "/cards/tags/creating-tags/",
-                  },
-                  {
-                    label: "Применение тегов к карточкам",
-                    translations: { en: "Applying Tags to Cards" },
-                    link: "/cards/tags/applying-tags/",
-                  },
-                ],
-              },
-              {
-                label: "Связи",
-                translations: { en: "Relations" },
-                collapsed: false,
-                items: [
-                  {
-                    label: "Что такое Связи?",
-                    translations: { en: "What are Relations?" },
-                    link: "/cards/relations/relations-overview/",
-                  },
-                  {
-                    label: "Определение связей",
-                    translations: { en: "Defining Relations" },
-                    link: "/cards/relations/defining-relations/",
-                  },
-                  {
-                    label: "Связывание карточек",
-                    translations: { en: "Relating Cards" },
-                    link: "/cards/relations/relating-cards/",
-                  },
-                  {
-                    label: "Связи vs. Ссылки",
-                    translations: { en: "Relations vs. References" },
-                    link: "/cards/relations/relations-vs-references/",
-                  },
-                ],
-              },
-            ],
-          },
+          // {
+          //   label: "Карточки",
+          //   translations: { en: "Cards" },
+          //   collapsed: true,
+          //   items: [
+          //     {
+          //       label: "Введение в Карточки",
+          //       translations: { en: "Introduction to Cards" },
+          //       link: "/cards/cards-overview/",
+          //     },
+          //     {
+          //       label: "Создание карточек",
+          //       translations: { en: "Creating Cards" },
+          //       link: "/cards/creating-cards/",
+          //     },
+          //     {
+          //       label: "Родительские и дочерние карточки",
+          //       translations: { en: "Parent-child Cards" },
+          //       link: "/cards/parent-child-cards/",
+          //     },
+          //     {
+          //       label: "Просмотр, сортировка и фильтрация",
+          //       translations: { en: "View, sort and filter Cards" },
+          //       link: "/cards/view-sort-filter-cards/",
+          //     },
+          //     {
+          //       label: "Карточки vs. Документы",
+          //       translations: { en: "Cards vs. Documents" },
+          //       link: "/cards/cards-vs-documents/",
+          //     },
+          //     {
+          //       label: "Примеры использования",
+          //       translations: { en: "Use cases" },
+          //       link: "/cards/use-cases/",
+          //     },
+          //     {
+          //       label: "Типы",
+          //       translations: { en: "Types" },
+          //       collapsed: false,
+          //       items: [
+          //         {
+          //           label: "Что такое Типы?",
+          //           translations: { en: "What are Types?" },
+          //           link: "/cards/types/types-overview/",
+          //         },
+          //         {
+          //           label: "Создание типов",
+          //           translations: { en: "Creating Types" },
+          //           link: "/cards/types/creating-types/",
+          //         },
+          //         {
+          //           label: "Файловые типы",
+          //           translations: { en: "File Types" },
+          //           link: "/cards/types/file-types/",
+          //         },
+          //       ],
+          //     },
+          //     {
+          //       label: "Теги",
+          //       translations: { en: "Tags" },
+          //       collapsed: false,
+          //       items: [
+          //         {
+          //           label: "Что такое Теги?",
+          //           translations: { en: "What are Tags?" },
+          //           link: "/cards/tags/tags-overview/",
+          //         },
+          //         {
+          //           label: "Создание тегов",
+          //           translations: { en: "Creating Tags" },
+          //           link: "/cards/tags/creating-tags/",
+          //         },
+          //         {
+          //           label: "Применение тегов к карточкам",
+          //           translations: { en: "Applying Tags to Cards" },
+          //           link: "/cards/tags/applying-tags/",
+          //         },
+          //       ],
+          //     },
+          //     {
+          //       label: "Связи",
+          //       translations: { en: "Relations" },
+          //       collapsed: false,
+          //       items: [
+          //         {
+          //           label: "Что такое Связи?",
+          //           translations: { en: "What are Relations?" },
+          //           link: "/cards/relations/relations-overview/",
+          //         },
+          //         {
+          //           label: "Определение связей",
+          //           translations: { en: "Defining Relations" },
+          //           link: "/cards/relations/defining-relations/",
+          //         },
+          //         {
+          //           label: "Связывание карточек",
+          //           translations: { en: "Relating Cards" },
+          //           link: "/cards/relations/relating-cards/",
+          //         },
+          //         {
+          //           label: "Связи vs. Ссылки",
+          //           translations: { en: "Relations vs. References" },
+          //           link: "/cards/relations/relations-vs-references/",
+          //         },
+          //       ],
+          //     },
+          //   ],
+          // },
           {
             label: "Управление задачами",
             translations: { en: "Task tracking" },
@@ -294,75 +294,75 @@ export default defineConfig({
               },
             ],
           },
-          {
-            label: "Контролируемые документы",
-            translations: { en: "Controlled documents" },
-            collapsed: true,
-            items: [
-              {
-                label: "Типы",
-                translations: { en: "Types" },
-                items: [
-                  {
-                    label: "Шаблоны",
-                    translations: { en: "Templates" },
-                    link: "/controlled-documents/templates/",
-                  },
-                  {
-                    label: "Документы качества",
-                    translations: { en: "Quality documents" },
-                    link: "/controlled-documents/quality-documents/",
-                  },
-                  {
-                    label: "Техническая документация",
-                    translations: { en: "Technical documentation" },
-                    link: "/controlled-documents/technical-documentation/",
-                  },
-                ],
-              },
-              {
-                label: "Авторинг",
-                translations: { en: "Authoring" },
-                items: [
-                  {
-                    label: "Редактирование и форматирование",
-                    translations: { en: "Editing and formatting" },
-                    link: "/controlled-documents/editing-formatting/",
-                  },
-                  {
-                    label: "Дополнительные настройки",
-                    translations: { en: "Additional document settings" },
-                    link: "/controlled-documents/document-settings/",
-                  },
-                  {
-                    label: "Версии и устаревшие документы",
-                    translations: { en: "Versions and obsolete documents" },
-                    link: "/controlled-documents/document-versions/",
-                  },
-                  {
-                    label: "Владение vs. авторство",
-                    translations: { en: "Ownership vs. authorship" },
-                    link: "/controlled-documents/ownership-authorship/",
-                  },
-                ],
-              },
-              {
-                label: "Ревью и утверждение",
-                translations: { en: "Review and approval" },
-                link: "/controlled-documents/review-approval/",
-              },
-              {
-                label: "Фильтрация документов",
-                translations: { en: "Filtering documents" },
-                link: "/controlled-documents/document-filtering/",
-              },
-              {
-                label: "Продукты",
-                translations: { en: "Products" },
-                link: "/controlled-documents/products/",
-              },
-            ],
-          },
+          // {
+          //   label: "Контролируемые документы",
+          //   translations: { en: "Controlled documents" },
+          //   collapsed: true,
+          //   items: [
+          //     {
+          //       label: "Типы",
+          //       translations: { en: "Types" },
+          //       items: [
+          //         {
+          //           label: "Шаблоны",
+          //           translations: { en: "Templates" },
+          //           link: "/controlled-documents/templates/",
+          //         },
+          //         {
+          //           label: "Документы качества",
+          //           translations: { en: "Quality documents" },
+          //           link: "/controlled-documents/quality-documents/",
+          //         },
+          //         {
+          //           label: "Техническая документация",
+          //           translations: { en: "Technical documentation" },
+          //           link: "/controlled-documents/technical-documentation/",
+          //         },
+          //       ],
+          //     },
+          //     {
+          //       label: "Авторинг",
+          //       translations: { en: "Authoring" },
+          //       items: [
+          //         {
+          //           label: "Редактирование и форматирование",
+          //           translations: { en: "Editing and formatting" },
+          //           link: "/controlled-documents/editing-formatting/",
+          //         },
+          //         {
+          //           label: "Дополнительные настройки",
+          //           translations: { en: "Additional document settings" },
+          //           link: "/controlled-documents/document-settings/",
+          //         },
+          //         {
+          //           label: "Версии и устаревшие документы",
+          //           translations: { en: "Versions and obsolete documents" },
+          //           link: "/controlled-documents/document-versions/",
+          //         },
+          //         {
+          //           label: "Владение vs. авторство",
+          //           translations: { en: "Ownership vs. authorship" },
+          //           link: "/controlled-documents/ownership-authorship/",
+          //         },
+          //       ],
+          //     },
+          //     {
+          //       label: "Ревью и утверждение",
+          //       translations: { en: "Review and approval" },
+          //       link: "/controlled-documents/review-approval/",
+          //     },
+          //     {
+          //       label: "Фильтрация документов",
+          //       translations: { en: "Filtering documents" },
+          //       link: "/controlled-documents/document-filtering/",
+          //     },
+          //     {
+          //       label: "Продукты",
+          //       translations: { en: "Products" },
+          //       link: "/controlled-documents/products/",
+          //     },
+          //   ],
+          // },
           {
             label: "Коммуникации",
             translations: { en: "Communication" },
@@ -427,29 +427,29 @@ export default defineConfig({
               },
             ],
           },
-          {
-            label: "Интеграции",
-            translations: { en: "Integrations" },
-            collapsed: true,
-            items: [
-              {
-                label: "GitHub",
-                link: "/integrations/github/",
-              },
-              {
-                label: "Google Calendar",
-                link: "/integrations/google-calendar/",
-              },
-              {
-                label: "Gmail",
-                link: "/integrations/gmail/",
-              },
-              {
-                label: "Telegram",
-                link: "/integrations/telegram/",
-              },
-            ],
-          },
+          // {
+          //   label: "Интеграции",
+          //   translations: { en: "Integrations" },
+          //   collapsed: true,
+          //   items: [
+          //     {
+          //       label: "GitHub",
+          //       link: "/integrations/github/",
+          //     },
+          //     {
+          //       label: "Google Calendar",
+          //       link: "/integrations/google-calendar/",
+          //     },
+          //     {
+          //       label: "Gmail",
+          //       link: "/integrations/gmail/",
+          //     },
+          //     {
+          //       label: "Telegram",
+          //       link: "/integrations/telegram/",
+          //     },
+          //   ],
+          // },
           {
             label: "Дополнительные модули",
             translations: { en: "Additional modules" },
@@ -460,26 +460,26 @@ export default defineConfig({
                 translations: { en: "Test management" },
                 link: "/additional-modules/test-management/",
               },
-              {
-                label: "Рекрутинг",
-                translations: { en: "Recruiting" },
-                link: "/additional-modules/recruiting/",
-              },
-              {
-                label: "Лиды",
-                translations: { en: "Leads" },
-                link: "/additional-modules/leads/",
-              },
-              {
-                label: "Опросы",
-                translations: { en: "Surveys" },
-                link: "/additional-modules/surveys/",
-              },
-              {
-                label: "Обучение",
-                translations: { en: "Trainings" },
-                link: "/additional-modules/trainings/",
-              },
+              // {
+              //   label: "Рекрутинг",
+              //   translations: { en: "Recruiting" },
+              //   link: "/additional-modules/recruiting/",
+              // },
+              // {
+              //   label: "Лиды",
+              //   translations: { en: "Leads" },
+              //   link: "/additional-modules/leads/",
+              // },
+              // {
+              //   label: "Опросы",
+              //   translations: { en: "Surveys" },
+              //   link: "/additional-modules/surveys/",
+              // },
+              // {
+              //   label: "Обучение",
+              //   translations: { en: "Trainings" },
+              //   link: "/additional-modules/trainings/",
+              // },
             ],
           },
           {

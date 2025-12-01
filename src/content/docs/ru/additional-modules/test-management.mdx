@@ -1,6 +1,6 @@
 ---
-title: Test management
-description: Learn how to create, manage and run tests in Foundation.
+title: Управление тестами
+description: Узнайте, как создавать, управлять и запускать тесты в Foundation.
 ---
 
 import LocalVideo from "../../../../components/LocalVideo.astro";
@@ -8,40 +8,42 @@ import { Image } from 'astro:assets';
 import newTestRun from '../../../../assets/screenshots/huly/test-management-new-test-run.png';
 import testRunResult from '../../../../assets/screenshots/huly/test-management-test-run-result.png';
 
-Foundation's test management module enables you to efficiently create, organize, and run tests within your workspace. With this module, you can track test statuses, view results, link tests to issues in the Tracker, and generate work tickets for assignees.
+Модуль управления тестами Foundation позволяет вам эффективно создавать, организовывать и запускать тесты в вашем рабочем пространстве. С помощью этого модуля вы можете отслеживать статусы тестов, просматривать результаты, связывать тесты с задачами в Трекере и создавать рабочие тикеты для исполнителей.
 
 <LocalVideo id="-p39H4jOSjI" posterQuality="max" />
 
-## Setting up tests
+## Настройка тестов
 
-Click the `+` button in the left sidebar to start a new test project. For now, test projects are isolated within the test management module; however, there are plans to connect test management with other workspace projects in the near future.
+Нажмите кнопку `+` в левой боковой панели, чтобы начать новый тестовый проект. На данный момент тестовые проекты изолированы в модуле управления тестами; однако планируется соединить управление тестами с другими проектами рабочего пространства в ближайшем будущем.
 
-### Creating a test suite
-Open the dropdown menu in the top left corner and select `Create test suite`. Provide a name and an optional description for your test suite.
+### Создание набора тестов
 
-### Creating a test case
-Within your test suite, add test cases by clicking `+ New test case`. Enter a name and optional description for your test case. Select a status (e.g., Ready, In Progress), and attach any relevant files or images. Then, click `Create`.
+Откройте выпадающее меню в верхнем левом углу и выберите `Создать набор тестов`. Укажите название и необязательное описание для вашего набора тестов.
 
-### Running tests
+### Создание тестового случая
 
-Use the checkboxes next to each test case to choose which ones to include in the test run. Then, click `Run`.
+В вашем наборе тестов добавьте тестовые случаи, нажав `+ Новый тестовый случай`. Введите название и необязательное описание для вашего тестового случая. Выберите статус (например, Готов, В работе) и прикрепите любые соответствующие файлы или изображения. Затем нажмите `Создать`.
 
-Provide a title and description for your test run. Your test run can include details such as environment setup, execution instructions, and expected results.
+### Запуск тестов
+
+Используйте флажки рядом с каждым тестовым случаем, чтобы выбрать, какие из них включить в тестовый запуск. Затем нажмите `Запустить`.
+
+Укажите название и описание для вашего тестового запуска. Ваш тестовый запуск может включать такие детали, как настройка окружения, инструкции по выполнению и ожидаемые результаты.
 
 <Image 
 src={newTestRun} 
-alt='Dialog to enter details for new test run' 
+alt='Диалоговое окно для ввода деталей нового тестового запуска' 
 inferSize
 quality='max'
 />
 
-Once the test has been run, you can change the status from `Untested` to `Passed`, `Failed` or `Blocked`, and add an assignee to review.
+После того как тест был запущен, вы можете изменить статус с `Не протестировано` на `Пройдено`, `Не пройдено` или `Заблокировано`, и добавить исполнителя для проверки.
 
 <Image 
 src={testRunResult} 
-alt='Example test run result' 
+alt='Пример результата тестового запуска' 
 inferSize
 quality='max'
 />
 
-You'll also see an Activity section where you can have discussions, link to isses and documents, and add attachments.
+Вы также увидите раздел Активность, где можно вести обсуждения, ссылаться на задачи и документы, а также добавлять вложения.

@@ -1,55 +1,55 @@
 ---
-title: Drawing board
-description: Learn how to use the drawing board and scribbles to enhance your collaboration in Foundation.
+title: Доска рисования
+description: Узнайте, как использовать доску рисования и скетчи для улучшения совместной работы в Foundation.
 ---
 
 import { Image } from 'astro:assets';
 import drawingBoard from '../../../../assets/screenshots/huly/drawing-board.png';
 import scribble from '../../../../assets/screenshots/huly/scribble.png';
 
-When collaborating on an idea, we often find ourselves reaching for a pen and paper to sketch out our thoughts. With drawing boards in Foundation, you can sketch together live with teammates, making it easy to brainstorm, plan, and visualize ideas while saving everything to your workspace.
+При совместной работе над идеей мы часто тянемся к ручке и бумаге, чтобы набросать свои мысли. С помощью досок рисования в Foundation вы можете рисовать вместе с коллегами в реальном времени, что упрощает мозговой штурм, планирование и визуализацию идей, сохраняя всё в вашем рабочем пространстве.
 
-## Creating a drawing board
+## Создание доски рисования
 
-To create a new drawing board in a document or issue description, simply type `/` or click the `+` to the left of the document and select "Drawing board" from the list of options.
+Чтобы создать новую доску рисования в документе или описании задачи, просто введите `/` или нажмите `+` слева от документа и выберите «Доска рисования» из списка опций.
 
-At the top of the drawing board, you'll see a toolbar with the following options (from left to right):
+В верхней части доски рисования вы увидите панель инструментов со следующими опциями (слева направо):
 
-- **Trash can** - Clear the contents of the drawing board (this action cannot be undone).
-- **Pen** - Select the pen tool to draw on the board.
-- **Eraser** - Select the eraser tool to erase parts of the drawing.
-- **Move** - Click and drag to move around the drawing board.
-- **Letter** - Add a text box.
-- **Size slider** - Adjust the size of the pen or eraser.
-- **Color picker** - Select a color for the pen or eraser.
-- **Settings menu** - Add or remove colors from your palette, or reset colors to default settings.
+- **Корзина** — очистить содержимое доски рисования (это действие нельзя отменить).
+- **Перо** — выберите инструмент «Перо» для рисования на доске.
+- **Ластик** — выберите инструмент «Ластик» для стирания частей рисунка.
+- **Перемещение** — нажмите и перетащите для перемещения по доске рисования.
+- **Буква** — добавить текстовое поле.
+- **Ползунок размера** — настройте размер пера или ластика.
+- **Выбор цвета** — выберите цвет для пера или ластика.
+- **Меню настроек** — добавьте или удалите цвета из палитры или сбросьте цвета к настройкам по умолчанию.
 
-At the top right corner, you'll see a button to open your drawing board in full-screen mode, giving you even more space to sketch.
+В правом верхнем углу вы увидите кнопку для открытия доски рисования в полноэкранном режиме, что даёт вам ещё больше пространства для рисования.
 
 <Image 
 src={drawingBoard} 
-alt='Example of the drawing board embedded in a document' 
+alt='Пример доски рисования, встроенной в документ' 
 inferSize
 quality='max'
 />
 
-> **Note:** Anyone viewing the document can collaborate on the drawing board in real time.
+> **Примечание:** Любой, кто просматривает документ, может совместно работать на доске рисования в реальном времени.
 
-To build other kinds of flow charts, diagrams and graphs, check out our guide on [diagrams](/ru/knowledge-management/mermaid-diagrams), which leverage MermaidJS syntax to build a variety of visualizations.
+Для создания других видов блок-схем, диаграмм и графиков ознакомьтесь с нашим руководством по [диаграммам](/ru/knowledge-management/mermaid-diagrams), которые используют синтаксис MermaidJS для создания различных визуализаций.
 
-## Scribble on images
+## Скетчи на изображениях
 
-With Foundation's drawing tool, you can create any shared image into a drawing board using the scribbles feature.
+С помощью инструмента рисования Foundation вы можете превратить любое общее изображение в доску рисования, используя функцию скетчей.
 
-Open any image that's been shared in a message and click the scribble icon (labeled `Scribble over`). The image will become a drawing board, allowing anyone viewing the image to draw on it. All of the same tools are available for images as they are for drawing boards.
+Откройте любое изображение, которым поделились в сообщении, и нажмите на значок скетча (с подписью `Рисовать поверх`). Изображение превратится в доску рисования, позволяя любому, кто просматривает изображение, рисовать на нём. Для изображений доступны все те же инструменты, что и для досок рисования.
 
-Scribbling on images is an excellent way to provide feedback, add notes, or brainstorm ideas on shared resources. 
+Рисование на изображениях — отличный способ предоставить обратную связь, добавить заметки или провести мозговой штурм идей на общих ресурсах.
 
-After some scribbles have been added to the image, you'll see a clock icon appear next to the scribble icon (labeled `Scribble history`). Click this to see a history of all the scribbles that have been added to the image, including who added which scribbles.
+После того как на изображение были добавлены некоторые скетчи, вы увидите значок часов рядом со значком скетча (с подписью `История скетчей`). Нажмите на него, чтобы увидеть историю всех скетчей, добавленных к изображению, включая информацию о том, кто какие скетчи добавил.
 
 <Image 
 src={scribble} 
-alt='Scribbles and scribble history on an image' 
+alt='Скетчи и история скетчей на изображении' 
 inferSize
 quality='max'
 />

@@ -1,28 +1,28 @@
 ---
-title: Self-hosting Foundation
-description: Learn how to get help with self-hosting Foundation.
+title: Самостоятельный хостинг Foundation
+description: Узнайте, как получить помощь с самостоятельным хостингом Foundation.
 ---
 
-We offer the option to self-host the Foundation platform on your own server. All of the documentation for setting up and maintaining a self-hosted instance of Foundation is available on our <a href="https://github.com/hcengineering/huly-selfhost" target="_blank">huly-selfhost</a> GitHub repository. The main repository readme includes documentation on the following:
+Мы предлагаем возможность самостоятельного хостинга платформы Foundation на вашем собственном сервере. Вся документация по настройке и обслуживанию самостоятельно размещённого экземпляра Foundation доступна в нашем GitHub-репозитории <a href="https://github.com/hcengineering/huly-selfhost" target="_blank">huly-selfhost</a>. Основной readme репозитория включает документацию по следующим темам:
 
-* Cloning and configuring the repository
-* Setting up AWS SES email notifications
-* Setting up Love Service (Audio & Video calls)
-* Setting up AI Service
-* Configuring OpenID Connect
-* Configuring GitHub OAuth
-* Disabling Sign-up
+* Клонирование и настройка репозитория
+* Настройка email-уведомлений через AWS SES
+* Настройка Love Service (аудио- и видеозвонки)
+* Настройка AI Service
+* Настройка OpenID Connect
+* Настройка GitHub OAuth
+* Отключение регистрации
 
-Everything you see in the cloud version can potentially be self-hosted; however, we may not "prepackage" some services for various reasons. Some integrations (like GitHub) may require you to install a separate app in GitHub or work with Google to enable an API, and we do not have extensive documentation to describe every case. Also, some parts of cloud version rely on proprietary Cloudflare services, which we intentionally do not include into self-hosting packages to avoid any vendor lock-ins. 
+Всё, что вы видите в облачной версии, потенциально может быть размещено самостоятельно; однако мы можем не «упаковывать» некоторые сервисы по различным причинам. Некоторые интеграции (например, GitHub) могут требовать установки отдельного приложения в GitHub или работы с Google для включения API, и у нас нет обширной документации, описывающей каждый случай. Кроме того, некоторые части облачной версии зависят от проприетарных сервисов Cloudflare, которые мы намеренно не включаем в пакеты самостоятельного хостинга, чтобы избежать привязки к поставщику.
 
-## Migrating data between self-hosted and cloud
+## Миграция данных между самостоятельным хостингом и облаком
 
-We do not have a way for users to migrate data from a self-hosted Foundation instance to our cloud version through the GUI, but there is still a way to manually export/import your self-hosted data to huly.io. Feel free to reach us out when you need to do this and we will provide you guidance and help.
+У нас нет способа для пользователей мигрировать данные из самостоятельно размещённого экземпляра Foundation в нашу облачную версию через графический интерфейс, но всё ещё есть способ вручную экспортировать/импортировать ваши данные в huly.io. Свяжитесь с нами, когда вам нужно это сделать, и мы предоставим вам руководство и помощь.
 
-In the reverse direction (migrating from could to self-hosted), if you are an owner of the workspace, you can do this in the desktop app. In the menu we have `Backup` option that saves workspace backup to your filesystem. When you have the backup, you can restore it to the self-hosted version.
+В обратном направлении (миграция из облака на самостоятельный хостинг), если вы являетесь владельцем рабочего пространства, вы можете сделать это в настольном приложении. В меню есть опция `Резервное копирование`, которая сохраняет резервную копию рабочего пространства в вашу файловую систему. Когда у вас есть резервная копия, вы можете восстановить её в самостоятельно размещённой версии.
 
-## Support for self-hosting
+## Поддержка самостоятельного хостинга
 
-Support for self-hosting is community-driven, and the best way to get in touch with others who are self-hosting is through our <a href="https://huly.link/slack" target="_blank">Slack</a> community in the `#open-source` channel. Here, you can ask questions, share tips, and get help from others who are also self-hosting Foundation. 
+Поддержка самостоятельного хостинга осуществляется сообществом, и лучший способ связаться с другими, кто использует самостоятельный хостинг — через наше сообщество в <a href="https://huly.link/slack" target="_blank">Slack</a> в канале `#open-source`. Здесь вы можете задавать вопросы, делиться советами и получать помощь от других, кто также использует самостоятельный хостинг Foundation.
 
-Our team is also active in the community and we do our best to respond to as many questions as we can. However, due to the technical complexities of self-hosting and the wide range of factors that vary between individual setups, we may not be able to respond to every request for self-hosting support. For this reason, we encourage community members to support each other whenever possible, and of course we welcome any supplementary documentation provided by the community to add to our repository.
+Наша команда также активна в сообществе, и мы делаем всё возможное, чтобы ответить на как можно больше вопросов. Однако из-за технической сложности самостоятельного хостинга и широкого спектра факторов, которые варьируются между индивидуальными настройками, мы не всегда можем ответить на каждый запрос о поддержке самостоятельного хостинга. По этой причине мы призываем участников сообщества поддерживать друг друга, когда это возможно, и, конечно, мы приветствуем любую дополнительную документацию, предоставленную сообществом для добавления в наш репозиторий.

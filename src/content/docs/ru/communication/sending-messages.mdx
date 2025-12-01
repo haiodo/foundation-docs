@@ -1,60 +1,60 @@
 ---
-title: Sending messages
-description: Learn how to exchange messages with team members through direct messages, group chats and channels.
+title: Отправка сообщений
+description: Узнайте, как обмениваться сообщениями с членами команды через личные сообщения, групповые чаты и каналы.
 ---
 
 import LocalVideo from "../../../../components/LocalVideo.astro";
 
 <LocalVideo id='I_ABiXcgMNw' posterQuality='max' />
 
-Foundation offers many options for team members to communicate directly within the Foundation platform without the need for an external app. Foundation’s chat functionality allows team members to exchange messages in real time through direct messaging and shared channels. 
+Foundation предлагает множество возможностей для общения членов команды непосредственно в платформе Foundation без необходимости использования внешнего приложения. Функциональность чата Foundation позволяет членам команды обмениваться сообщениями в реальном времени через личные сообщения и общие каналы.
 
-This guide covers how to exchange messages with your team using Chat. Chat is also integrated with the rest of your workspace, so documents, issues, pull requests and other workspace objects can be accessed alongside your other conversations. For more on how Chat integrates other workspace activity, see our guide on [activity tracking in chat](/ru/communication/chat-activity).
+Это руководство описывает, как обмениваться сообщениями с вашей командой, используя Чат. Чат также интегрирован с остальной частью вашего рабочего пространства, поэтому документы, задачи, pull request'ы и другие объекты рабочего пространства доступны наряду с другими вашими разговорами. Для получения дополнительной информации о том, как Чат интегрирует другую активность рабочего пространства, см. наше руководство по [отслеживанию активности в чате](/ru/communication/chat-activity).
 
-## Ways to chat
+## Способы общения в чате
 
-There are a few different ways to chat with team members on Foundation:
-* **Channels** - Public or private chatrooms based on topics or themes
-* **Direct messages** - Instant messaging between individuals or groups
-* **Other workspace objects** - From Chat, you can access all activity on documents, issues, files and more. Read more in our guide on [activity tracking in chat](/ru/communication/chat-activity).
+Есть несколько разных способов общения с членами команды в Foundation:
+* **Каналы** — публичные или приватные чат-комнаты на основе тем или направлений
+* **Личные сообщения** — мгновенные сообщения между отдельными лицами или группами
+* **Другие объекты рабочего пространства** — из Чата вы можете получить доступ ко всей активности документов, задач, файлов и многого другого. Читайте больше в нашем руководстве по [отслеживанию активности в чате](/ru/communication/chat-activity).
 
-**Icons and indicators:**
-* A red dot beside the chat indicates an unread message.
-* A green dot next to a user's avatar indicates that they are online and have their Foundation workspace open.
+**Иконки и индикаторы:**
+* Красная точка рядом с чатом указывает на непрочитанное сообщение.
+* Зелёная точка рядом с аватаром пользователя указывает, что он онлайн и его рабочее пространство Foundation открыто.
 
-## Managing chat channels
+## Управление каналами чата
 
-Create a new channel by clicking the `+` button at the top of the Chat sidebar and selecting `New channel`. Enter a name and topic for your channel and select either `Public` or `Private` for visibility. Click `Create`.
+Создайте новый канал, нажав кнопку `+` в верхней части боковой панели Чата и выбрав `Новый канал`. Введите название и тему для вашего канала и выберите либо `Публичный`, либо `Приватный` для видимости. Нажмите `Создать`.
 
-> **Note:** Channels set to `Private` are still visible in the channels list, but users will need to request access to join. To create chats that are not visible to the rest of the team, create a group direct message with the included members (see below).
+> **Примечание:** Каналы, установленные как `Приватные`, по-прежнему видны в списке каналов, но пользователям нужно будет запросить доступ для присоединения. Чтобы создать чаты, которые не видны остальной команде, создайте групповое личное сообщение с включёнными участниками (см. ниже).
 
-After you've created your channel, there will be a few additional settings available in the right sidebar:
+После создания канала в правой боковой панели будут доступны несколько дополнительных настроек:
 
-* **Name** - Set the name for the channel.
-* **Private** - Private channels are visible to members only.
-* **Auto join** - Toggle this setting to automatically add all new workspace members to this channel. This will not add existing workspace members; only members who join _after_ this setting is enabled will be added to the channel.
-* **Members** - Add or remove members from the channel.
-* **Topic** - Edit the topic (description) for the channel.
+* **Название** — установите название для канала.
+* **Приватный** — приватные каналы видны только участникам.
+* **Автоматическое присоединение** — включите эту настройку, чтобы автоматически добавлять всех новых участников рабочего пространства в этот канал. Это не добавит существующих участников рабочего пространства; только участники, которые присоединятся _после_ включения этой настройки, будут добавлены в канал.
+* **Участники** — добавьте или удалите участников из канала.
+* **Тема** — отредактируйте тему (описание) для канала.
 
-To leave a channel, hover over the channel name in the sidebar and click the settings menu, then click `Leave channel`, or navigate to "Channels", right-click on the channel name and select `Leave`.
+Чтобы покинуть канал, наведите курсор на название канала в боковой панели и нажмите на меню настроек, затем нажмите `Покинуть канал`, или перейдите в «Каналы», щёлкните правой кнопкой мыши на названии канала и выберите `Покинуть`.
 
-To archive a channel, you must be owner or creator of the workspace. Archive a channel either by selecting `Archive channel` from the settings menu, or right-clicking the channel name in "Channels" and selecting `Archive channel`.
+Чтобы архивировать канал, вы должны быть владельцем или создателем рабочего пространства. Архивируйте канал, выбрав `Архивировать канал` в меню настроек, или щёлкнув правой кнопкой мыши на названии канала в «Каналах» и выбрав `Архивировать канал`.
 
-> **Note:** Two channels are created by the system when you create the workspace: `#general` and `#random`. In order to archive these system-generated channels, you must be a Spaces Admin. For more on permissions, including how to set Spaces Admins, see our guide on [roles](/ru/advanced-settings/roles).
+> **Примечание:** Два канала создаются системой при создании рабочего пространства: `#general` и `#random`. Чтобы архивировать эти системные каналы, вы должны быть Администратором пространств. Для получения дополнительной информации о разрешениях, включая настройку Администраторов пространств, см. наше руководство по [ролям](/ru/advanced-settings/roles).
 
-Star a channel by selecting `Star` in the settings menu. Starred channels will appear at the top of the list in the left sidebar.
+Добавьте канал в избранное, выбрав `В избранное` в меню настроек. Избранные каналы будут отображаться в верхней части списка в левой боковой панели.
 
-## Creating direct and group messages
+## Создание личных и групповых сообщений
 
-Create a new direct message by clicking the `+` button at the top of the Chat sidebar and selecting `New direct chat`. Select the user you'd like to chat with and click `Create`. Selecting more than one user will create a group chat.
+Создайте новое личное сообщение, нажав кнопку `+` в верхней части боковой панели Чата и выбрав `Новый личный чат`. Выберите пользователя, с которым хотите общаться, и нажмите `Создать`. Выбор более одного пользователя создаст групповой чат.
 
-To close a direct or group message and remove it from your sidebar, hover over the chat in the sidebar and open the settings menu, then click `Close conversation`. Closing the conversation does not remove the message history, so your existing messages will still be available when you reopen the chat.
+Чтобы закрыть личное или групповое сообщение и удалить его из боковой панели, наведите курсор на чат в боковой панели и откройте меню настроек, затем нажмите `Закрыть разговор`. Закрытие разговора не удаляет историю сообщений, поэтому ваши существующие сообщения по-прежнему будут доступны при повторном открытии чата.
 
-## Chat options
+## Опции чата
 
-Like everywhere else in your Foundation workspace, chat messages support markdown formatting, attachments, mentions, emojis and text templates. 
+Как и везде в вашем рабочем пространстве Foundation, сообщения чата поддерживают форматирование markdown, вложения, упоминания, эмодзи и текстовые шаблоны.
 
-Hover over any message to add a reaction, pin it to the top of the chat, or reply in a chat thread:
+Наведите курсор на любое сообщение, чтобы добавить реакцию, закрепить его в верхней части чата или ответить в ветке чата:
 
 <div style="position: relative; padding-top: 56.25%;">
   <iframe
@@ -66,7 +66,7 @@ Hover over any message to add a reaction, pin it to the top of the chat, or repl
   ></iframe>
 </div>
 
-Bookmark any message to save it for later. See all saved messages in the `Saved` tab in the Chat sidebar:
+Добавьте любое сообщение в закладки, чтобы сохранить его на потом. Просмотрите все сохранённые сообщения во вкладке `Сохранённые` в боковой панели Чата:
 
 <div style="position: relative; padding-top: 56.25%;">
   <iframe
@@ -78,16 +78,16 @@ Bookmark any message to save it for later. See all saved messages in the `Saved`
   ></iframe>
 </div>
 
-## Translating messages
+## Перевод сообщений
 
-To translate a message, simply hover over the message and click the translate icon. This will translate the message into the language you have selected for your workspace.
+Чтобы перевести сообщение, просто наведите курсор на сообщение и нажмите значок перевода. Это переведёт сообщение на язык, который вы выбрали для вашего рабочего пространства.
 
-To restore the original message, hover again and click 'Show original'.
+Чтобы восстановить исходное сообщение, снова наведите курсор и нажмите «Показать оригинал».
 
-## Chatting in the sidebar
+## Чат в боковой панели
 
-Any chat can be moved to the right sidebar by clicking the "Open in sidebar" button in the top right corner of the chat. You can open multiple threads, channels and DMs here for easy access as you navigate the platform. The chat panel can be hidden by clicking the chat icon in the far right menu.
+Любой чат можно переместить в правую боковую панель, нажав кнопку «Открыть в боковой панели» в правом верхнем углу чата. Вы можете открыть несколько веток, каналов и личных сообщений здесь для быстрого доступа при навигации по платформе. Панель чата можно скрыть, нажав на значок чата в крайнем правом меню.
 
-Your calendar and virtual office can also be accessed through the right sidebar. Check it out!
+Ваш календарь и виртуальный офис также доступны через правую боковую панель. Попробуйте!
 
 <LocalVideo id="u80x-5HGmiY" posterQuality="max" />

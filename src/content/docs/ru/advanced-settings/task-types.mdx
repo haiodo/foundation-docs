@@ -1,6 +1,6 @@
 ---
-title: Task types
-description: Learn how to customize your workspace with task types.
+title: Типы задач
+description: Узнайте, как настроить рабочее пространство с помощью типов задач.
 ---
 
 import LocalVideo from "../../../../components/LocalVideo.astro";
@@ -11,76 +11,76 @@ import settingsCustomProjectType from "../../../../assets/screenshots/huly/setti
 
 <LocalVideo id="EVmZr1Ybi8c" posterQuality="max" />
 
-Foundation is designed to be highly configurable to any kind of workflow. While some customization features are still being developed, there are several options already available for you to configure your workspace to your specific needs.
+Foundation разработан для высокой настраиваемости под любой тип рабочего процесса. Хотя некоторые функции настройки всё ещё разрабатываются, уже доступно несколько опций для настройки вашего рабочего пространства под ваши конкретные нужды.
 
-## What are task types?
+## Что такое типы задач?
 
-Task types define the kinds of tasks inside your projects. A task type can have its own special properties and process states.
+Типы задач определяют виды задач внутри ваших проектов. Тип задачи может иметь свои собственные специальные свойства и состояния процесса.
 
-To take a look at the default task type used in your Tracker, navigate to Settings and select `Classic project` from the `SPACE TYPES` area in the left sidebar menu. `Classic project` is the default [space type](/ru/advanced-settings/space-types) used in Foundation.
+Чтобы посмотреть на тип задачи по умолчанию, используемый в вашем Трекере, перейдите в Настройки и выберите `Классический проект` в области `ТИПЫ ПРОСТРАНСТВ` в левом боковом меню. `Классический проект` — это [тип пространства](/ru/advanced-settings/space-types) по умолчанию, используемый в Foundation.
 
-Notice in the `TASK TYPES` section that one task types are listed: `Issue`. Opening this task type will reveal its properties and process states.
+Обратите внимание в разделе `ТИПЫ ЗАДАЧ`, что указан один тип задач: `Задача`. Открытие этого типа задачи покажет его свойства и состояния процесса.
 
-The `Issue` task type has process states of `Backlog`, `Todo`, `In Progress`, `Done` and `Canceled`.
+Тип задачи `Задача` имеет состояния процесса `Бэклог`, `К выполнению`, `В работе`, `Готово` и `Отменено`.
 
 <Image
   src={settingsProcessStates}
-  alt="Settings for process states"
+  alt="Настройки состояний процесса"
   inferSize
   quality="max"
 />
 
-> **Note:** If you've already connected your workspace to GitHub, you'll also see a `Pull request` task type. These tasks are synced with GitHub, so they have their own unique properties and process states.
+> **Примечание:** Если вы уже подключили ваше рабочее пространство к GitHub, вы также увидите тип задачи `Pull request`. Эти задачи синхронизируются с GitHub, поэтому у них есть свои уникальные свойства и состояния процесса.
 
-## Process states
+## Состояния процесса
 
-Process states are the stages that a task goes through in its lifecycle. Each task type can have its own set of process states. The Foundation system will automatically move tasks between these states based on user actions. The following actions will trigger automatic state changes:
+Состояния процесса — это этапы, через которые задача проходит в своём жизненном цикле. Каждый тип задачи может иметь свой собственный набор состояний процесса. Система Foundation автоматически перемещает задачи между этими состояниями на основе действий пользователя. Следующие действия вызовут автоматические изменения состояния:
 
-1. **Scheduling an action item** - When the issue assignee schedules an [action item](/ru/task-tracking/creating-action-items) connected to that issue, the issue status will change from "Todo" to "In Progress".
-2. **Completing a scheduled action item** - When the issue assignee checks off an [action item](/ru/task-tracking/creating-action-items) as complete (after scheduling it in their Planner), the issue status will change to "Done".
+1. **Планирование активности** — Когда исполнитель задачи планирует [активность](/ru/task-tracking/creating-action-items), связанную с этой задачей, статус задачи изменится с «К выполнению» на «В работе».
+2. **Завершение запланированной активности** — Когда исполнитель задачи отмечает [активность](/ru/task-tracking/creating-action-items) как завершённую (после её планирования в своём Планировщике), статус задачи изменится на «Готово».
 
-Even if you customize your process states to use different names (see below), the system will still recognize these actions based on the `Status category` of the process state. For example, you could change the name of the process state from "In Progress" to "Actively Working" and as long as the `Status category` is set to "Active", the system will still recognize this state as the one that triggers the automatic state change.
+Даже если вы настроите свои состояния процесса с использованием других названий (см. ниже), система всё равно распознает эти действия на основе `Категории статуса` состояния процесса. Например, вы можете изменить название состояния процесса с «В работе» на «Активно работаю», и пока `Категория статуса` установлена как «Активный», система всё равно распознает это состояние как то, которое вызывает автоматическое изменение состояния.
 
-## Creating custom task types
+## Создание пользовательских типов задач
 
-In order to use your own customized task types and process states, you can either modify the default task types on the Classic Project, or create a new [space type](/ru/advanced-settings/space-types). Either way, this can only be done by the workspace owner or maintainer.
+Чтобы использовать свои собственные настроенные типы задач и состояния процесса, вы можете либо изменить типы задач по умолчанию в Классическом проекте, либо создать новый [тип пространства](/ru/advanced-settings/space-types). В любом случае это может сделать только владелец или администратор рабочего пространства.
 
-To create a new space type, navigate to settings and click the `+` button next to `SPACE TYPES` in the left sidebar menu.
+Чтобы создать новый тип пространства, перейдите в настройки и нажмите кнопку `+` рядом с `ТИПЫ ПРОСТРАНСТВ` в левом боковом меню.
 
-Select the space type you'll be basing your new space type on; in this case, you'll select `Tracker`. From here, you can enter a name for your space type (for example, "Custom Tracker"), and choose whether or not to base your space type on the `Classic project` (recommended). Then, click `Create`.
+Выберите тип пространства, на котором вы будете основывать новый тип пространства; в данном случае вы выберете `Трекер`. Здесь вы можете ввести название для вашего типа пространства (например, «Пользовательский трекер») и выбрать, хотите ли вы основать тип пространства на `Классическом проекте` (рекомендуется). Затем нажмите `Создать`.
 
-Find your new space type in the left sidebar menu. From here, you can add members to the space type and toggle whether new workspace members will be automatically added to this space type.
+Найдите ваш новый тип пространства в левом боковом меню. Здесь вы можете добавить участников к типу пространства и переключить, будут ли новые участники рабочего пространства автоматически добавляться к этому типу пространства.
 
-Click the `+` button in the `TASK TYPES` section. Enter a name for your new task type (for example, "Issue" or "Task"), choose whether this type can be used for sub-tasks, and click `Create`.
+Нажмите кнопку `+` в разделе `ТИПЫ ЗАДАЧ`. Введите название для вашего нового типа задачи (например, «Задача» или «Тикет»), выберите, может ли этот тип использоваться для подзадач, и нажмите `Создать`.
 
-The steps for creating and modifying task types in the Classic Project are the same.
+Шаги для создания и изменения типов задач в Классическом проекте такие же.
 
-## Creating custom process states
+## Создание пользовательских состояний процесса
 
-Open your new task types to create your custom process states. You'll see placeholders for each category, each of which can be edited to your specific needs.
+Откройте ваши новые типы задач, чтобы создать пользовательские состояния процесса. Вы увидите заполнители для каждой категории, каждый из которых может быть отредактирован под ваши конкретные нужды.
 
-Click on any process state to edit it. You can change the name of the state, the color associated with it, and the status category. The status category is used to trigger automatic state changes based on user actions.
+Нажмите на любое состояние процесса, чтобы отредактировать его. Вы можете изменить название состояния, связанный с ним цвет и категорию статуса. Категория статуса используется для запуска автоматических изменений состояния на основе действий пользователя.
 
-You can also create new process states. For example, within the "Active" status category, you may wish to add more states, such as "Started" "In progress", "Submitted for review" and "Under review". You might also want to add more specific states to the "Done status/lost" category, such as "Cancelled", "On hold" or "Blocked".
+Вы также можете создавать новые состояния процесса. Например, в категории статуса «Активный» вы можете добавить больше состояний, таких как «Начато», «В работе», «Отправлено на проверку» и «На проверке». Вы также можете добавить более конкретные состояния в категорию «Готово/потеряно», такие как «Отменено», «Приостановлено» или «Заблокировано».
 
 <Image
   src={settingsCustomProcessStates}
-  alt="Settings for custom process states"
+  alt="Настройки пользовательских состояний процесса"
   inferSize
   quality="max"
 />
 
-## Using your custom task types
+## Использование пользовательских типов задач
 
-In order to use your custom task types, you'll need to create a new project based on your new space type. At this time, it is not possible to change the space type used for an existing project.
+Чтобы использовать ваши пользовательские типы задач, вам нужно создать новый проект на основе вашего нового типа пространства. В настоящее время невозможно изменить тип пространства, используемый для существующего проекта.
 
-When creating a new project, select your custom task types from the `Project type` dropdown menu.
+При создании нового проекта выберите ваши пользовательские типы задач из выпадающего меню `Тип проекта`.
 
 <Image
   src={settingsCustomProjectType}
-  alt="Using a custom project type"
+  alt="Использование пользовательского типа проекта"
   inferSize
   quality="max"
 />
 
-Now, when creating new issues within your project, you'll find all of your custom task types and process states available to use.
+Теперь при создании новых задач в вашем проекте вы найдёте все ваши пользовательские типы задач и состояния процесса, доступные для использования.

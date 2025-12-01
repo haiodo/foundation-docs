@@ -1,6 +1,6 @@
 ---
-title: Issue collaborators
-description: Learn how to add collaborators for issues and manage notifications as a collaborator.
+title: Соавторы задач
+description: Узнайте, как добавлять соавторов к задачам и управлять уведомлениями в качестве соавтора.
 ---
 
 import { Image } from 'astro:assets';
@@ -9,44 +9,44 @@ import notificationsSettingsActivity from '../../../../assets/screenshots/huly/s
 import trackerSubscribed from '../../../../assets/screenshots/huly/tracker-subscribed.png';
 
 
-Issues can only be assigned to one person, but you can add collaborators to keep other team members informed about issue activity. Collaborators will receive notifications for issue activity according to their own personal notifications settings.
+Задачи можно назначить только одному человеку, но вы можете добавлять соавторов, чтобы держать других членов команды в курсе активности по задаче. Соавторы будут получать уведомления об активности задачи в соответствии со своими личными настройками уведомлений.
 
-Check out our demo video for a quick overview:
+Посмотрите наше демонстрационное видео для быстрого обзора:
 
 <LocalVideo id='1_bb3N2UT04' posterQuality='max' />
 
-## Adding collaborators to an issue
+## Добавление соавторов к задаче
 
-To add a collaborator to an issue, open the details page for that issue and find the `Collaborators` section in the right sidebar. By default, the issue creator and assignee will be listed as collaborators. Select the person you'd like to add as a collaborator from the dropdown menu.
+Чтобы добавить соавтора к задаче, откройте страницу деталей этой задачи и найдите раздел `Соавторы` в правой боковой панели. По умолчанию создатель задачи и исполнитель будут указаны как соавторы. Выберите человека, которого хотите добавить в качестве соавтора, из выпадающего меню.
 
-You can also add yourself as a collaborator to issues you'd like to follow. This can be useful if you want to keep track of an issue that's assigned to someone else. Adding yourself as a collaborator follows the same process as adding any other collaborator.
+Вы также можете добавить себя в качестве соавтора к задачам, за которыми хотите следить. Это может быть полезно, если вы хотите отслеживать задачу, назначенную кому-то другому. Добавление себя в качестве соавтора происходит так же, как добавление любого другого соавтора.
 
-Collaborators will receive a notification in their inbox to let them know that they've been added to the issue. New collaborators will also be shown in the activity section for that issue, so anyone viewing the issue can see who has been added.
+Соавторы получат уведомление в своём входящем, чтобы сообщить им, что они были добавлены к задаче. Новые соавторы также будут отображаться в разделе активности этой задачи, чтобы любой, кто просматривает задачу, мог видеть, кто был добавлен.
 
-## Managing notifications as a collaborator
+## Управление уведомлениями в качестве соавтора
 
-Collaborators will automatically receive notifications in their inbox for issue activity, such as comments, updates to issue status, and other changes. The specific acitivities that will trigger notifications in the inbox will depend on the user's own notifications settings.
+Соавторы автоматически получают уведомления во входящих об активности задачи, такой как комментарии, обновления статуса задачи и другие изменения. Конкретные активности, которые будут вызывать уведомления во входящих, зависят от собственных настроек уведомлений пользователя.
 
-To manage your notifications, navigate to Settings and select `Notifications` from the left sidebar menu. Then, select `Issues`. Notifications settings for issues are the same regardless of whether you are the owner, assignee, or collaborator on the issue. From this settings menu, you can select which kinds of issue activity you'd like to receive notifications for. Push, email, and Telegram notifications can also be toggled on or off.
+Чтобы управлять уведомлениями, перейдите в Настройки и выберите `Уведомления` в меню левой боковой панели. Затем выберите `Задачи`. Настройки уведомлений для задач одинаковы независимо от того, являетесь ли вы владельцем, исполнителем или соавтором задачи. В этом меню настроек вы можете выбрать, о каких видах активности задачи хотите получать уведомления. Push-уведомления, уведомления по электронной почте и в Telegram также можно включить или отключить.
 
 <Image 
     src={notificationsSettingsActivity} 
-    alt="Notifications settings for issue activity" 
+    alt="Настройки уведомлений для активности задач" 
     inferSize 
     quality="max" 
 />
 
-## Viewing your subscribed issues
+## Просмотр задач, на которые вы подписаны
 
-Being a collaborator for an issue makes it easy to see all of the issues you're following in one place. 
+Будучи соавтором задачи, вы можете легко увидеть все задачи, за которыми следите, в одном месте.
 
-Navigate to your Tracker and select `My issues` from the left sidebar. Then, select `Subscribed` from the top right menu. This view will show you all of the issues you're either a collaborator, owner or assignee for.
+Перейдите в Трекер и выберите `Мои задачи` в левой боковой панели. Затем выберите `Подписки` в меню в правом верхнем углу. Это представление покажет вам все задачи, для которых вы являетесь соавтором, владельцем или исполнителем.
 
 <Image 
     src={trackerSubscribed} 
-    alt="Viewing subscribed issues in the Tracker" 
+    alt="Просмотр подписанных задач в Трекере" 
     inferSize 
     quality="max" 
 />
 
-Just like any other view in your Tracker, you can filter and sort issues to find exactly what you need, and save custom views for easy access later. To learn more about customizing your Tracker, see our guide on [viewing and sorting issues](/ru/task-tracking/viewing-issues).
+Как и в любом другом представлении Трекера, вы можете фильтровать и сортировать задачи, чтобы найти именно то, что нужно, и сохранять пользовательские представления для быстрого доступа позже. Чтобы узнать больше о настройке Трекера, см. наше руководство по [просмотру и сортировке задач](/ru/task-tracking/viewing-issues).

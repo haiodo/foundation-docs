@@ -1,6 +1,6 @@
 ---
-title: Roles and permissions
-description: Learn how to manage roles and permissions.
+title: Роли и разрешения
+description: Узнайте, как управлять ролями и разрешениями.
 ---
 
 import { Image } from "astro:assets";
@@ -9,41 +9,41 @@ import productRoles from '../../../../assets/screenshots/eqms/roles-product.png'
 import adminRoles from '../../../../assets/screenshots/eqms/admin.png';
 import trainingRoles from '../../../../assets/screenshots/eqms/roles-trainings.png';
 
-Roles and permissions can be used to restrict access to spaces and allow additional permissions to select members. Permissions can be controlled at various levels:
+Роли и разрешения могут использоваться для ограничения доступа к пространствам и предоставления дополнительных разрешений выбранным участникам. Разрешения можно контролировать на различных уровнях:
 
-1. **Workspace owners and maintainers** - high-level control over who can make major changes like deleting the workspace and adding/removing team members. 
-2. **Global admins** - extended permissions for members to archive and delete projects in the workspace.
-3. **Space type roles** - specific roles that can be used to toggle update, archive and delete permissions for users, customized by space type.
-4. **Space members** - permissions for each individual space — simply add members and toggle privacy settings to determine exactly who can access which spaces in your workspace.
-
-
-## Workspace owners and maintainers
-
-Navigate to Settings and select `Owners` from the `WORKSPACE SETTINGS` menu.
-
-From here, you can select a role for each team member:
-
-- **Owner** - The workspace owner has full control over the workspace. They can remove team members and manage workspace settings. A workspace can have multiple owners.
-- **Maintainer** - Maintainers have the same permissions as owners, except they cannot delete the workspace, remove owners, or remove team members. Maintainers cannot change their own role in the system. Maintainers can manage workspace settings.
-- **User** - Users cannot manage workspace settings, change their own role, or remove team members.
-
-> **Note:** [TraceX](/ru/getting-started/introduction-tracex) workspaces come with additional roles: `Qualified User`, `Manager`, and `QARA`. These roles are used to manage permissions for controlled documents, products, product documents and trainings.
+1. **Владельцы и администраторы рабочего пространства** — высокоуровневый контроль над тем, кто может вносить серьёзные изменения, такие как удаление рабочего пространства и добавление/удаление членов команды.
+2. **Глобальные администраторы** — расширенные разрешения для участников на архивирование и удаление проектов в рабочем пространстве.
+3. **Роли типов пространств** — специфические роли, которые можно использовать для переключения разрешений на обновление, архивирование и удаление для пользователей, настраиваемые по типу пространства.
+4. **Участники пространства** — разрешения для каждого отдельного пространства — просто добавьте участников и переключите настройки конфиденциальности, чтобы определить, кто именно может получить доступ к каким пространствам в вашем рабочем пространстве.
 
 
-## Spaces admins
+## Владельцы и администраторы рабочего пространства
 
-You can also set admins globally for all spaces within the workspace. Global admins have full permissions when it comes to spaces themselves, such as archiving and deleting projects, but they cannot delete the workspace, remove the workspace owner, or manage workspace settings (unless granted Owner or Maintainer permissions at the workspace level - see above).
+Перейдите в Настройки и выберите `Владельцы` в меню `НАСТРОЙКИ РАБОЧЕГО ПРОСТРАНСТВА`.
 
-To set a global admin, navigate to `WORKSPACE SETTINGS` in Settings and select `Spaces`. From here, you can add or remove admins.
+Здесь вы можете выбрать роль для каждого члена команды:
+
+- **Владелец** — владелец рабочего пространства имеет полный контроль над рабочим пространством. Он может удалять членов команды и управлять настройками рабочего пространства. Рабочее пространство может иметь несколько владельцев.
+- **Администратор** — администраторы имеют те же разрешения, что и владельцы, за исключением того, что они не могут удалить рабочее пространство, удалять владельцев или удалять членов команды. Администраторы не могут изменять свою собственную роль в системе. Администраторы могут управлять настройками рабочего пространства.
+- **Пользователь** — пользователи не могут управлять настройками рабочего пространства, изменять свою собственную роль или удалять членов команды.
+
+> **Примечание:** Рабочие пространства [TraceX](/ru/getting-started/introduction-tracex) поставляются с дополнительными ролями: `Квалифицированный пользователь`, `Менеджер` и `QARA`. Эти роли используются для управления разрешениями на контролируемые документы, продукты, документы продуктов и обучение.
 
 
-## Space type roles
+## Администраторы пространств
 
-Roles can also be set for a space type. In Settings under the `SPACE TYPES` menu, navigate to the space type you'd like to manage and find the `Roles` section. Then, click the `+` button. Enter a name for your role and click `Create`. Then, click on your role to select specific permissions.
+Вы также можете установить администраторов глобально для всех пространств в рабочем пространстве. Глобальные администраторы имеют полные разрешения в отношении самих пространств, такие как архивирование и удаление проектов, но они не могут удалить рабочее пространство, удалить владельца рабочего пространства или управлять настройками рабочего пространства (если им не предоставлены разрешения Владельца или Администратора на уровне рабочего пространства — см. выше).
 
-Once your roles have been created, you'll be able to assign roles to team members for spaces using that space type.
+Чтобы установить глобального администратора, перейдите в `НАСТРОЙКИ РАБОЧЕГО ПРОСТРАНСТВА` в Настройках и выберите `Пространства`. Здесь вы можете добавлять или удалять администраторов.
 
-[TraceX](/ru/getting-started/introduction-tracex) workspaces come with some special permission built in. The default roles of `Qualified User`, `Manager`, and `QARA` can be customized for your specific needs. Navigate to your workspace settings and open the space that you want to customize — Default Documents, Default Trainings or Default Products. From here, you can add or delete roles and edit their names, and add or remove permissions.
+
+## Роли типов пространств
+
+Роли также можно установить для типа пространства. В Настройках в меню `ТИПЫ ПРОСТРАНСТВ` перейдите к типу пространства, которым хотите управлять, и найдите раздел `Роли`. Затем нажмите кнопку `+`. Введите название для вашей роли и нажмите `Создать`. Затем нажмите на вашу роль, чтобы выбрать конкретные разрешения.
+
+После создания ролей вы сможете назначать роли членам команды для пространств, использующих этот тип пространства.
+
+Рабочие пространства [TraceX](/ru/getting-started/introduction-tracex) поставляются с некоторыми встроенными специальными разрешениями. Роли по умолчанию `Квалифицированный пользователь`, `Менеджер` и `QARA` могут быть настроены под ваши конкретные нужды. Перейдите в настройки вашего рабочего пространства и откройте пространство, которое хотите настроить — Документы по умолчанию, Обучение по умолчанию или Продукты по умолчанию. Здесь вы можете добавлять или удалять роли и редактировать их названия, а также добавлять или удалять разрешения.
 
 <div style="position: relative; padding-top: 47.69874476987448%;">
   <iframe
@@ -55,32 +55,32 @@ Once your roles have been created, you'll be able to assign roles to team member
   ></iframe>
 </div>
 
-## Space members
+## Участники пространства
 
-Permissions can also be set for individual spaces, such as projects, teamspaces, drives, and more.
+Разрешения также можно установить для отдельных пространств, таких как проекты, командные пространства, диски и многое другое.
 
-All spaces with a `Make private` toggle can be restricted to allow only members to view the space. This toggle can be set at the time of creating the space, or when editing the settings later.
+Все пространства с переключателем `Сделать приватным` могут быть ограничены, чтобы только участники могли просматривать пространство. Этот переключатель можно установить во время создания пространства или при редактировании настроек позже.
 
-In order to restrict access to only members, ensure `Make private` is toggled on, and select the members you'd like to have access to the space.
+Чтобы ограничить доступ только для участников, убедитесь, что переключатель `Сделать приватным` включён, и выберите участников, которым хотите предоставить доступ к пространству.
 
-In the example below, you can see that this project space is set to private, and 7 members have been selected to have access to the space.
+В примере ниже вы можете видеть, что это пространство проекта установлено как приватное, и 7 участников были выбраны для доступа к пространству.
 
 <Image
   src={spacesMakePrivate}
-  alt="Privacy settings for a space"
+  alt="Настройки конфиденциальности для пространства"
   inferSize
   quality="max"
 />
 
-If a space is not set to private, any member of your workspace will be able to join the space. This means that you don't need to manually add members to the space when creating it. However, if members are not added to the space, they will not see it in their left side menu by default — they will have to find the space on the list of spaces and join it themselves. For this reason, you may want to consider adding members to the space when creating it to ensure it automatically appears in each member's left side menu.
+Если пространство не установлено как приватное, любой участник вашего рабочего пространства сможет присоединиться к пространству. Это означает, что вам не нужно вручную добавлять участников в пространство при его создании. Однако, если участники не добавлены в пространство, они не увидят его в левом боковом меню по умолчанию — им придётся найти пространство в списке пространств и присоединиться к нему самостоятельно. По этой причине вы можете рассмотреть возможность добавления участников в пространство при его создании, чтобы оно автоматически появлялось в левом боковом меню каждого участника.
 
-> **Note:** If `Auto join` is toggled on, new workspace members will be automatically added to your private space, even if you haven't specifically added them to the list of members. If you'd like to restrict access to only the members you've selected, ensure `Auto join` is toggled off. 
+> **Примечание:** Если переключатель `Автоматическое присоединение` включён, новые участники рабочего пространства будут автоматически добавлены в ваше приватное пространство, даже если вы не добавили их конкретно в список участников. Если вы хотите ограничить доступ только для выбранных вами участников, убедитесь, что переключатель `Автоматическое присоединение` выключен.
 
-## Assigning roles
+## Назначение ролей
 
-How you choose to assign roles to your users will depend on the kind of module you're working with, and the steps are slightly different for each. Continue reading to see how roles can be assigned for Controlled Documents, Products, and Trainings.
+Как вы выберете назначать роли вашим пользователям, будет зависеть от типа модуля, с которым вы работаете, и шаги немного отличаются для каждого. Продолжайте читать, чтобы узнать, как роли могут быть назначены для Контролируемых документов, Продуктов и Обучения.
 
-**Controlled Documents:** Open the settings menu for any document space and select `Edit documents space`. From here, you can first add members to the space and then assign members to each of the available roles.
+**Контролируемые документы:** Откройте меню настроек для любого пространства документов и выберите `Редактировать пространство документов`. Здесь вы можете сначала добавить участников в пространство, а затем назначить участников каждой из доступных ролей.
 
 <div style="position: relative; padding-top: 47.69874476987448%;">
   <iframe
@@ -92,16 +92,16 @@ How you choose to assign roles to your users will depend on the kind of module y
   ></iframe>
 </div>
 
-**Products:** Roles can be assigned when creating a product by selecting members from each role dropdown menu. 
+**Продукты:** Роли можно назначать при создании продукта, выбирая участников из каждого выпадающего меню ролей.
 
 <Image 
 src={productRoles} 
-alt='Adding roles for a product' 
+alt='Добавление ролей для продукта' 
 inferSize
 quality='max'
 />
 
-To assign roles from a product that's already been created, use the right side panel to add members to each role.
+Чтобы назначить роли для уже созданного продукта, используйте правую боковую панель для добавления участников к каждой роли.
 
 <div style="position: relative; padding-top: 47.69874476987448%;">
   <iframe
@@ -113,11 +113,11 @@ To assign roles from a product that's already been created, use the right side p
   ></iframe>
 </div>
 
-**Trainings:** Open your workspace settings and select `Trainings`. From there, you can assign roles to team members using the dropdown menus. 
+**Обучение:** Откройте настройки вашего рабочего пространства и выберите `Обучение`. Оттуда вы можете назначать роли членам команды, используя выпадающие меню.
 
 <Image 
 src={trainingRoles} 
-alt='Adding roles for a training' 
+alt='Добавление ролей для обучения' 
 inferSize
 quality='max'
 />

@@ -1,45 +1,45 @@
 ---
-title: Team planner
-description: Learn how to use the team planner in Foundation.
+title: Командный планировщик
+description: Узнайте, как использовать командный планировщик в Foundation.
 ---
 
 import { Image } from "astro:assets";
 import teamPlanner from "../../../../assets/screenshots/huly/team-planner.png";
 
-## Navigating the team planner
+## Навигация по командному планировщику
 
-The team planner in Foundation provides a way to visualize your team's agenda at a glance. To navigate to the team planner, click the sun icon in the left side navigation bar.
+Командный планировщик в Foundation предоставляет способ визуализации расписания вашей команды с первого взгляда. Чтобы перейти к командному планировщику, нажмите на значок солнца в левой панели навигации.
 
-The team planner breaks the agenda down by project, and you can find each of your project listed on the left side panel.
+Командный планировщик разбивает расписание по проектам, и вы можете найти каждый из ваших проектов в левой боковой панели.
 
-This design allows teams with multiple projects to easily see all of the work planned for each project. This also ensures project privacy, as team members will only be able to view the planner for projects they are a member of, while the workspace owner will be able to view all projects. For this reason, it is not currently possible to view the work for all projects at the same time.
+Этот дизайн позволяет командам с несколькими проектами легко видеть всю запланированную работу для каждого проекта. Это также обеспечивает конфиденциальность проекта, поскольку члены команды смогут просматривать планировщик только для проектов, участниками которых они являются, в то время как владелец рабочего пространства сможет просматривать все проекты. По этой причине в настоящее время невозможно просматривать работу для всех проектов одновременно.
 
-### Agenda & calendar views
+### Представления расписания и календаря
 
-By default, the team planner shows the agenda view of the previous and current day. You can scroll through the days using the arrow buttons in the top right corner, viewing 2 days at a time as you scroll.
+По умолчанию командный планировщик показывает представление расписания предыдущего и текущего дня. Вы можете прокручивать дни с помощью кнопок со стрелками в правом верхнем углу, просматривая по 2 дня за раз при прокрутке.
 
-The calendar view displays either a daily or weekly calendar of each team member's tasks. In the daily calendar, tasks are displayed as blocks, and can be viewed in 1-hour or 30-minute increments. The weekly calendar displays each team member's tasks on each day of the week.
+Представление календаря отображает либо ежедневный, либо еженедельный календарь задач каждого члена команды. В ежедневном календаре задачи отображаются в виде блоков и могут быть просмотрены с шагом в 1 час или 30 минут. Еженедельный календарь отображает задачи каждого члена команды на каждый день недели.
 
-<Image src={teamPlanner} alt="Team planner" inferSize quality="max" />
+<Image src={teamPlanner} alt="Командный планировщик" inferSize quality="max" />
 
-## Visibility settings for action items
+## Настройки видимости для активностей
 
-By default, when a team member schedules an action item in the their personal planner (see [Scheduling action items](/ru/task-tracking/scheduling-action-items)), it will automatically become visible on the team planner for all other team members. The title of the action item, associated issue, and number of hours scheduled are all visible. Clicking the dropdown arrow by that task will also reveal the specific time block the action item is scheduled for.
+По умолчанию, когда член команды планирует активность в своём личном планировщике (см. [Планирование активностей](/ru/task-tracking/scheduling-action-items)), она автоматически станет видимой в командном планировщике для всех остальных членов команды. Название активности, связанная задача и количество запланированных часов — всё это видно. Нажатие на стрелку раскрывающегося списка рядом с этой задачей также покажет конкретный временной блок, на который запланирована активность.
 
-If the team member has set the visibility of their action item to "Only visible to you", it will not appear in the team planner.
+Если член команды установил видимость своей активности как «Видно только вам», она не будет отображаться в командном планировщике.
 
-Action icon items that are not associated with a space (for example, those that are created manually in an individual's personal planner) will not appear in the team planner. Once an action item has been added to their personal planner, the user can then select a visibility setting for that action item, depending on whether they want it to be visible to everyone, appear as "Busy", or be only visible to them.
+Активности, не связанные с пространством (например, те, которые созданы вручную в личном планировщике человека), не будут отображаться в командном планировщике. После добавления активности в личный планировщик пользователь может выбрать настройку видимости для этой активности в зависимости от того, хочет ли он, чтобы она была видна всем, отображалась как «Занят» или была видна только ему.
 
-## Visibility settings for events
+## Настройки видимости для событий
 
-Events on a team member's personal planner will also appear in the team planner, depending on the visibility settings.
+События в личном планировщике члена команды также будут отображаться в командном планировщике в зависимости от настроек видимости.
 
-If the visibility is set to "Visible to everyone", everyone on the team will be able to see the title, time and duration of the event. If the visibility is set to "FreeBusy", team members will be able to see that person is busy during that time, but they won't be able to see the name of the event.
+Если видимость установлена как «Видно всем», каждый в команде сможет видеть название, время и продолжительность события. Если видимость установлена как «Занят», члены команды смогут видеть, что человек занят в это время, но они не смогут видеть название события.
 
-Just like action items, if the visibility is set to "Only visible to you", the event will not appear in the team planner.
+Как и в случае с активностями, если видимость установлена как «Видно только вам», событие не будет отображаться в командном планировщике.
 
-## Visualizing workload and capacity
+## Визуализация загрузки и ёмкости
 
-Foundation does not currently offer a Gantt Chart feature or other visualization of workload and capacity. The team planner does provide a way to see how many hours each team member has scheduled for the day, which can be used in combination with time tracking and due dates to understand project allocations and capacity planning.
+Foundation в настоящее время не предлагает функцию диаграммы Ганта или другую визуализацию загрузки и ёмкости. Командный планировщик предоставляет способ увидеть, сколько часов каждый член команды запланировал на день, что можно использовать в сочетании с отслеживанием времени и сроками выполнения для понимания распределения проектов и планирования ёмкости.
 
-If you're interested in finding out more about how you can work with Foundation's current implementation to manage your specific workflows, you can chat with other users in our [Slack Community](https://huly.link/slack) to ask questions and exchange ideas.
+Если вы заинтересованы в получении дополнительной информации о том, как вы можете работать с текущей реализацией Foundation для управления вашими конкретными рабочими процессами, вы можете пообщаться с другими пользователями в нашем [Slack-сообществе](https://huly.link/slack), чтобы задать вопросы и обменяться идеями.

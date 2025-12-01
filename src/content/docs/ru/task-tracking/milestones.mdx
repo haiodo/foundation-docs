@@ -1,6 +1,6 @@
 ---
-title: Milestones
-description: Learn how to create milestones and use them to organize issues.
+title: Вехи
+description: Узнайте, как создавать вехи и использовать их для организации задач.
 ---
 
 import { Image } from 'astro:assets';
@@ -11,53 +11,53 @@ import addMilestoneIssueTracker from '../../../../assets/screenshots/huly/milest
 
 <LocalVideo id='lfVgwL0hWNs' posterQuality='max' />
 
-## What are milestones?
+## Что такое вехи?
 
-Milestones are a way of organizing issues in Foundation. They can be used to group issues together based on a common theme, project, or timeline. For example, you might create a milestone for a specific feature release, a sprint, or a project phase. Milestones can be used to track progress, set deadlines, and ensure that issues are completed in a logical order.
+Вехи — это способ организации задач в Foundation. Они могут использоваться для группировки задач на основе общей темы, проекта или временной шкалы. Например, вы можете создать веху для конкретного релиза функции, спринта или фазы проекта. Вехи можно использовать для отслеживания прогресса, установки дедлайнов и обеспечения того, чтобы задачи выполнялись в логическом порядке.
 
-> **Note:** Milestones are specific to a project and cannot be moved to a different project in the Tracker.
+> **Примечание:** Вехи специфичны для проекта и не могут быть перемещены в другой проект в Трекере.
 
-## Creating a new milestone
+## Создание новой вехи
 
-Navigate to the Tracker and select Milestones under any project. Then, click the `+ Milestone` button in the top right corner. From here, you can enter a name and optional description for your Milestone, and set a status and deadline.
+Перейдите в Трекер и выберите Вехи под любым проектом. Затем нажмите кнопку `+ Веха` в правом верхнем углу. Здесь вы можете ввести название и необязательное описание для вашей Вехи, а также установить статус и дедлайн.
 
-## Adding issues to a milestone
+## Добавление задач к вехе
 
-### Creating a new issue within a milestone
+### Создание новой задачи внутри вехи
 
-There are a few ways to add issues to a milestone. If you haven't created the issue yet, simply click the `+` button on the details page for any milestone. This will allow you to create a new issue that will be automatically linked to that milestone.
+Есть несколько способов добавить задачи к вехе. Если вы ещё не создали задачу, просто нажмите кнопку `+` на странице деталей любой вехи. Это позволит вам создать новую задачу, которая будет автоматически связана с этой вехой.
 
-Alternatively, when creating a new issue from anywhere else in the tracker, simply select the desired milestone from the dropdown menu in the issue creation dialog:
+В качестве альтернативы, при создании новой задачи из любого другого места в трекере, просто выберите желаемую веху из выпадающего меню в диалоговом окне создания задачи:
 
 <Image
 src={createMilestoneIssue}
-alt='Add a milestone to a new issue'
+alt='Добавление вехи к новой задаче'
 inferSize
 quality='max'
 />
 
-### Linking an existing issue to a milestone
+### Связывание существующей задачи с вехой
 
-If you've already created an issue and want to link it to an existing milestone, you can open the details page for that issue and select the desired milestone from the right sidebar:
+Если вы уже создали задачу и хотите связать её с существующей вехой, вы можете открыть страницу деталей этой задачи и выбрать желаемую веху в правой боковой панели:
 
 <Image 
 src={addMilestoneIssue} 
-alt='Add an issue to a milestone from the issue view' 
+alt='Добавление задачи к вехе из представления задачи' 
 inferSize
 quality='max'
 />
 
-Alternatively, you could right-click on the issue in your tracker to open the context menu, and select a milestone from there:
+В качестве альтернативы вы можете щёлкнуть правой кнопкой мыши на задаче в вашем трекере, чтобы открыть контекстное меню, и выбрать веху оттуда:
 
 <Image 
 src={addMilestoneIssueTracker} 
-alt='Add an issue to a milestone from the tracker view' 
+alt='Добавление задачи к вехе из представления трекера' 
 inferSize
 quality='max'
 />
 
-## Using milestones to sort issues
+## Использование вех для сортировки задач
 
-Like any other issue attribute, milestones can be used to filter and sort issues in the Tracker. For example, you can toggle whether or not you want to see the milestone for each issue in your Tracker, or you can customize your entire Tracker view by organizing issues by milestone.
+Как и любой другой атрибут задачи, вехи можно использовать для фильтрации и сортировки задач в Трекере. Например, вы можете переключать, хотите ли вы видеть веху для каждой задачи в вашем Трекере, или вы можете настроить весь вид Трекера, организовав задачи по вехам.
 
-Issues can also be filtered by milestone, allowing you to quickly see all of the issues related to a selection of milestones.
+Задачи также можно фильтровать по вехам, что позволяет быстро увидеть все задачи, связанные с выбранными вехами.
