@@ -1,0 +1,82 @@
+---
+title: Templates
+description: Learn how to create templates for Controlled Documents.
+---
+
+import { Image } from 'astro:assets';
+import newTemplate1 from '../../../../assets/screenshots/eqms/new-template-1.png';
+import newTemplate2 from '../../../../assets/screenshots/eqms/new-template-2.png';
+import newTemplate3 from '../../../../assets/screenshots/eqms/new-template-3.png';
+import templatesNote from '../../../../assets/screenshots/eqms/templates-note.png';
+import newDocumentCategory from '../../../../assets/screenshots/eqms/new-document-category.png';
+import useDocumentCategory from '../../../../assets/screenshots/eqms/use-document-category.png';
+
+Templates are reusable document structures that can be used to create new documents quickly and consistently. You can create templates for Controlled Documents to ensure that your team follows the same format for each document type.
+
+## Creating a template
+
+Templates can be created either by opening the dropdown menu beside the `New document` button and selecting `New template`, or by clicking the `+ Template` button in the Templates section of the Controlled Documents module. 
+
+Alternatively, a template can be created in a specific document space by opening the settings menu and selecting `Create new template`. It's also possible to create templates as children of existing documents; to do this, open the settings menu for any document and select `Create child template`.
+
+In the template creation dialog, you'll be guided through the following steps to create your template:
+
+**Step 1:** Select a space and parent for your template. The space defines the roles and permissions that will apply; the parent simply determines where the template will be stored. A template can be the direct child of the space itself (at the top level of the space), or it can be a child of a document within that space.
+
+<Image 
+src={newTemplate1} 
+alt='Step 1 for creating a new template' 
+inferSize
+quality='max'
+/>
+
+**Step 2:** Provide details for your template, including a title, description and prefix, a category, and reason. Customizing the template code is also possible, but it's recommended to use the default settings to maintain consistent incremental numbering of templates.
+
+<Image 
+src={newTemplate2} 
+alt='Step 2 for creating a new template' 
+inferSize
+quality='max'
+/>
+
+**Step 3:** Select team members that will be working on documents using this template, including Co-Authors, Reviewers and Approvers.
+
+<Image 
+src={newTemplate3} 
+alt='Step 3 for creating a new template' 
+inferSize
+quality='max'
+/>
+
+After proceeding through the above steps, click `Create Draft`.
+
+## Adding notes
+
+With the text editor, you can select the note symbol to add guidance that will help users understand what information to include in a defined section.
+
+<Image 
+src={templatesNote} 
+alt='Viewing a note for a template section' 
+inferSize
+quality='max'
+/>
+
+## Document categories
+
+To create a new document category, select the dropdown menu next to the `+ New document` button and click `New category`.
+
+<Image 
+src={newDocumentCategory} 
+alt='Create a new document category' 
+inferSize
+quality='max'
+/>
+
+Categories can be used to group related documents together. Categories are fully configurable and can represent departments in your company or key topics. In this example, the category `Quality Manual` is being used when creating a new template:
+
+<Image 
+src={useDocumentCategory} 
+alt='Using a document category when creating a template' 
+inferSize
+quality='max'
+/>

@@ -7,294 +7,429 @@ export default defineConfig({
     [
       starlight({
         customCss: ["./src/styles.css"],
-        title: "Huly Docs",
+        title: "Foundation Docs",
         favicon: "/favicon.ico",
         components: {
-          // override default 'SocialIcons' component
           SocialIcons: "./src/components/CustomSocialIcons.astro",
+        },
+        defaultLocale: "ru",
+        locales: {
+          ru: {
+            label: "Русский",
+            lang: "ru",
+          },
+          en: {
+            label: "English",
+            lang: "en",
+          },
         },
         sidebar: [
           {
-            label: "Getting started",
+            label: "Начало работы",
+            translations: { en: "Getting started" },
             items: [
               {
-                label: "What is Huly?",
-                link: "/getting-started/introduction-huly/",
+                label: "Что такое Foundation?",
+                translations: { en: "What is Foundation?" },
+                link: "/getting-started/introduction-platform/",
               },
               {
-                label: "What is TraceX?",
+                label: "Что такое TraceX?",
+                translations: { en: "What is TraceX?" },
                 link: "/getting-started/introduction-tracex/",
               },
               {
-                label: "Workspace setup",
+                label: "Настройка рабочего пространства",
+                translations: { en: "Workspace setup" },
                 link: "/getting-started/workspace-setup/",
               },
               {
-                label: "Learn the basics",
+                label: "Основы работы",
+                translations: { en: "Learn the basics" },
                 link: "/getting-started/learn-the-basics/",
               },
               {
-                label: "API & other tools",
+                label: "API и другие инструменты",
+                translations: { en: "API & other tools" },
                 link: "/getting-started/api-tools/",
               },
               {
-                label: "Self-hosting",
+                label: "Самостоятельный хостинг",
+                translations: { en: "Self-hosting" },
                 link: "/getting-started/self-host/",
               },
               {
-                label: "Mobile access",
+                label: "Мобильный доступ",
+                translations: { en: "Mobile access" },
                 link: "/getting-started/mobile-access/",
               },
               {
-                label: "Support",
+                label: "Поддержка",
+                translations: { en: "Support" },
                 link: "/getting-started/support/",
               },
             ],
           },
           {
-            label: "Cards",
+            label: "Карточки",
+            translations: { en: "Cards" },
             collapsed: true,
             items: [
-              {label: "Introduction to Cards", link: "/cards/cards-overview/"},
-              {label: 'Creating Cards', link: '/cards/creating-cards/'},
-              {label: 'Parent-child Cards', link: '/cards/parent-child-cards/'},     
-              {label: 'View, sort and filter Cards', link: '/cards/view-sort-filter-cards/'},
-              {label: 'Cards vs. Documents', link: '/cards/cards-vs-documents/'},     
-              {label: 'Use cases', link: '/cards/use-cases/'},     
               {
-                label: "Types",
-                collapsed: false,
-                items: [
-                  {label: 'What are Types?', link: '/cards/types/types-overview/'},
-                  {label: 'Creating Types', link: '/cards/types/creating-types/'},
-                  {label: 'File Types', link: '/cards/types/file-types/'},                ]
+                label: "Введение в Карточки",
+                translations: { en: "Introduction to Cards" },
+                link: "/cards/cards-overview/",
               },
               {
-                label: "Tags",
-                collapsed: false,
-                items: [
-                  {label: 'What are Tags?', link: '/cards/tags/tags-overview/'},
-                  {label: 'Creating Tags', link: '/cards/tags/creating-tags/'},
-                  {label: 'Applying Tags to Cards', link: '/cards/tags/applying-tags/'},
-                ]
+                label: "Создание карточек",
+                translations: { en: "Creating Cards" },
+                link: "/cards/creating-cards/",
               },
               {
-                label: "Relations",
+                label: "Родительские и дочерние карточки",
+                translations: { en: "Parent-child Cards" },
+                link: "/cards/parent-child-cards/",
+              },
+              {
+                label: "Просмотр, сортировка и фильтрация",
+                translations: { en: "View, sort and filter Cards" },
+                link: "/cards/view-sort-filter-cards/",
+              },
+              {
+                label: "Карточки vs. Документы",
+                translations: { en: "Cards vs. Documents" },
+                link: "/cards/cards-vs-documents/",
+              },
+              {
+                label: "Примеры использования",
+                translations: { en: "Use cases" },
+                link: "/cards/use-cases/",
+              },
+              {
+                label: "Типы",
+                translations: { en: "Types" },
                 collapsed: false,
                 items: [
-                  {label: 'What are Relations?', link: '/cards/relations/relations-overview/'},
-                  {label: 'Defining Relations', link: '/cards/relations/defining-relations/'},
-                  {label: 'Relating Cards', link: '/cards/relations/relating-cards/'},
-                  {label: 'Relations vs. References', link: '/cards/relations/relations-vs-references/'},
-                ]
+                  {
+                    label: "Что такое Типы?",
+                    translations: { en: "What are Types?" },
+                    link: "/cards/types/types-overview/",
+                  },
+                  {
+                    label: "Создание типов",
+                    translations: { en: "Creating Types" },
+                    link: "/cards/types/creating-types/",
+                  },
+                  {
+                    label: "Файловые типы",
+                    translations: { en: "File Types" },
+                    link: "/cards/types/file-types/",
+                  },
+                ],
               },
-              
-              ]
-            },
+              {
+                label: "Теги",
+                translations: { en: "Tags" },
+                collapsed: false,
+                items: [
+                  {
+                    label: "Что такое Теги?",
+                    translations: { en: "What are Tags?" },
+                    link: "/cards/tags/tags-overview/",
+                  },
+                  {
+                    label: "Создание тегов",
+                    translations: { en: "Creating Tags" },
+                    link: "/cards/tags/creating-tags/",
+                  },
+                  {
+                    label: "Применение тегов к карточкам",
+                    translations: { en: "Applying Tags to Cards" },
+                    link: "/cards/tags/applying-tags/",
+                  },
+                ],
+              },
+              {
+                label: "Связи",
+                translations: { en: "Relations" },
+                collapsed: false,
+                items: [
+                  {
+                    label: "Что такое Связи?",
+                    translations: { en: "What are Relations?" },
+                    link: "/cards/relations/relations-overview/",
+                  },
+                  {
+                    label: "Определение связей",
+                    translations: { en: "Defining Relations" },
+                    link: "/cards/relations/defining-relations/",
+                  },
+                  {
+                    label: "Связывание карточек",
+                    translations: { en: "Relating Cards" },
+                    link: "/cards/relations/relating-cards/",
+                  },
+                  {
+                    label: "Связи vs. Ссылки",
+                    translations: { en: "Relations vs. References" },
+                    link: "/cards/relations/relations-vs-references/",
+                  },
+                ],
+              },
+            ],
+          },
           {
-            label: "Task tracking",
+            label: "Управление задачами",
+            translations: { en: "Task tracking" },
             collapsed: true,
             items: [
               {
-                label: "Creating projects",
+                label: "Создание проектов",
+                translations: { en: "Creating projects" },
                 link: "/task-tracking/creating-projects/",
               },
               {
-                label: "Creating issues",
+                label: "Создание задач",
+                translations: { en: "Creating issues" },
                 link: "/task-tracking/creating-issues/",
               },
               {
-                label: "Components",
+                label: "Компоненты",
+                translations: { en: "Components" },
                 link: "/task-tracking/components/",
               },
               {
-                label: "Milestones",
+                label: "Вехи",
+                translations: { en: "Milestones" },
                 link: "/task-tracking/milestones/",
               },
               {
-                label: "Issue collaborators",
+                label: "Соавторы задач",
+                translations: { en: "Issue collaborators" },
                 link: "/task-tracking/issue-collaborators/",
               },
               {
-                label: "Labels",
+                label: "Метки",
+                translations: { en: "Labels" },
                 link: "/task-tracking/labels/",
               },
               {
-                label: "Viewing and sorting issues",
+                label: "Просмотр и сортировка задач",
+                translations: { en: "Viewing and sorting issues" },
                 link: "/task-tracking/viewing-issues/",
               },
               {
-                label: "Related issues",
+                label: "Связанные задачи",
+                translations: { en: "Related issues" },
                 link: "/task-tracking/related-issues/",
               },
               {
-                label: "Issue templates",
+                label: "Шаблоны задач",
+                translations: { en: "Issue templates" },
                 link: "/task-tracking/issue-templates/",
               },
               {
-                label: "Creating action items",
+                label: "Создание активностей",
+                translations: { en: "Creating action items" },
                 link: "/task-tracking/creating-action-items/",
               },
               {
-                label: "Scheduling action items",
+                label: "Планирование активностей",
+                translations: { en: "Scheduling action items" },
                 link: "/task-tracking/scheduling-action-items/",
               },
             ],
           },
           {
-            label: "Team resources",
+            label: "Командные ресурсы",
+            translations: { en: "Team resources" },
             collapsed: true,
             items: [
               {
-                label: "Team planner",
+                label: "Командный планировщик",
+                translations: { en: "Team planner" },
                 link: "/team-resources/team-planner/",
               },
               {
-                label: "Human resources",
+                label: "Управление персоналом",
+                translations: { en: "Human resources" },
                 link: "/team-resources/human-resources/",
               },
             ],
           },
           {
-            label: "Knowledge management",
+            label: "Управление знаниями",
+            translations: { en: "Knowledge management" },
             collapsed: true,
             items: [
               {
-                label: "Documents",
+                label: "Документы",
+                translations: { en: "Documents" },
                 link: "/knowledge-management/documents/",
               },
               {
-                label: "Collaborative editing",
+                label: "Совместное редактирование",
+                translations: { en: "Collaborative editing" },
                 link: "/knowledge-management/collaborative-editing/",
               },
               {
-                label: "Action items in documents",
+                label: "Активности в документах",
+                translations: { en: "Action items in documents" },
                 link: "/knowledge-management/documents-action-items/",
               },
               {
-                label: "Drawing board and scribbles",
+                label: "Доска рисования",
+                translations: { en: "Drawing board and scribbles" },
                 link: "/knowledge-management/drawing-board/",
               },
               {
-                label: "Mermaid diagrams",
+                label: "Диаграммы Mermaid",
+                translations: { en: "Mermaid diagrams" },
                 link: "/knowledge-management/mermaid-diagrams/",
               },
               {
-                label: "Drive",
+                label: "Диск",
+                translations: { en: "Drive" },
                 link: "/knowledge-management/drive/",
               },
             ],
           },
           {
-            label: "Controlled documents",
+            label: "Контролируемые документы",
+            translations: { en: "Controlled documents" },
             collapsed: true,
             items: [
               {
-                label: "Types",
+                label: "Типы",
+                translations: { en: "Types" },
                 items: [
                   {
-                    label: "Templates",
+                    label: "Шаблоны",
+                    translations: { en: "Templates" },
                     link: "/controlled-documents/templates/",
                   },
                   {
-                    label: "Quality documents",
+                    label: "Документы качества",
+                    translations: { en: "Quality documents" },
                     link: "/controlled-documents/quality-documents/",
                   },
                   {
-                    label: "Technical documentation",
+                    label: "Техническая документация",
+                    translations: { en: "Technical documentation" },
                     link: "/controlled-documents/technical-documentation/",
                   },
                 ],
               },
               {
-                label: "Authoring",
+                label: "Авторинг",
+                translations: { en: "Authoring" },
                 items: [
                   {
-                    label: "Editing and formatting",
+                    label: "Редактирование и форматирование",
+                    translations: { en: "Editing and formatting" },
                     link: "/controlled-documents/editing-formatting/",
                   },
                   {
-                    label: "Additional document settings",
+                    label: "Дополнительные настройки",
+                    translations: { en: "Additional document settings" },
                     link: "/controlled-documents/document-settings/",
                   },
                   {
-                    label: "Versions and obsolete documents",
+                    label: "Версии и устаревшие документы",
+                    translations: { en: "Versions and obsolete documents" },
                     link: "/controlled-documents/document-versions/",
                   },
                   {
-                    label: "Ownership vs. authorship",
+                    label: "Владение vs. авторство",
+                    translations: { en: "Ownership vs. authorship" },
                     link: "/controlled-documents/ownership-authorship/",
                   },
                 ],
               },
               {
-                label: "Review and approval",
+                label: "Ревью и утверждение",
+                translations: { en: "Review and approval" },
                 link: "/controlled-documents/review-approval/",
               },
               {
-                label: "Filtering documents",
+                label: "Фильтрация документов",
+                translations: { en: "Filtering documents" },
                 link: "/controlled-documents/document-filtering/",
               },
               {
-                label: "Products",
+                label: "Продукты",
+                translations: { en: "Products" },
                 link: "/controlled-documents/products/",
               },
             ],
           },
           {
-            label: "Communication",
+            label: "Коммуникации",
+            translations: { en: "Communication" },
             collapsed: true,
             items: [
               {
-                label: "Activity tracking in chat",
+                label: "Отслеживание активности в чате",
+                translations: { en: "Activity tracking in chat" },
                 link: "/communication/chat-activity/",
               },
               {
-                label: "Sending messages",
+                label: "Отправка сообщений",
+                translations: { en: "Sending messages" },
                 link: "/communication/sending-messages/",
               },
               {
-                label: "Inline comments",
+                label: "Встроенные комментарии",
+                translations: { en: "Inline comments" },
                 link: "/communication/inline-comments/",
               },
               {
-                label: "Inbox",
+                label: "Входящие",
+                translations: { en: "Inbox" },
                 link: "/communication/inbox/",
               },
               {
-                label: "Notifications",
+                label: "Уведомления",
+                translations: { en: "Notifications" },
                 link: "/communication/notifications/",
               },
               {
-                label: "Virtual office",
+                label: "Виртуальный офис",
+                translations: { en: "Virtual office" },
                 link: "/communication/virtual-office/",
               },
               {
-                label: "Live transcription",
+                label: "Транскрибация в реальном времени",
+                translations: { en: "Live transcription" },
                 link: "/communication/live-transcription/",
               },
             ],
           },
           {
-            label: "People and contacts",
+            label: "Люди и контакты",
+            translations: { en: "People and contacts" },
             collapsed: true,
             items: [
               {
-                label: "Managing contacts",
+                label: "Управление контактами",
+                translations: { en: "Managing contacts" },
                 link: "/people-contacts/managing-contacts/",
               },
               {
-                label: "Employees",
+                label: "Сотрудники",
+                translations: { en: "Employees" },
                 link: "/people-contacts/employees/",
               },
               {
-                label: "Connecting tasks",
+                label: "Связывание задач",
+                translations: { en: "Connecting tasks" },
                 link: "/people-contacts/connecting-tasks/",
               },
             ],
           },
           {
-            label: "Integrations",
+            label: "Интеграции",
+            translations: { en: "Integrations" },
             collapsed: true,
             items: [
               {
@@ -316,53 +451,65 @@ export default defineConfig({
             ],
           },
           {
-            label: "Additional modules",
+            label: "Дополнительные модули",
+            translations: { en: "Additional modules" },
             collapsed: true,
             items: [
               {
-                label: "Test management",
+                label: "Управление тестами",
+                translations: { en: "Test management" },
                 link: "/additional-modules/test-management/",
               },
               {
-                label: "Recruiting",
+                label: "Рекрутинг",
+                translations: { en: "Recruiting" },
                 link: "/additional-modules/recruiting/",
               },
               {
-                label: "Leads",
+                label: "Лиды",
+                translations: { en: "Leads" },
                 link: "/additional-modules/leads/",
               },
               {
-                label: "Surveys",
+                label: "Опросы",
+                translations: { en: "Surveys" },
                 link: "/additional-modules/surveys/",
               },
               {
-                label: "Trainings",
+                label: "Обучение",
+                translations: { en: "Trainings" },
                 link: "/additional-modules/trainings/",
               },
             ],
           },
           {
-            label: "Advanced settings",
+            label: "Расширенные настройки",
+            translations: { en: "Advanced settings" },
             collapsed: true,
             items: [
               {
-                label: "Space types",
+                label: "Типы пространств",
+                translations: { en: "Space types" },
                 link: "/advanced-settings/space-types/",
               },
               {
-                label: "Roles and permissions",
+                label: "Роли и разрешения",
+                translations: { en: "Roles and permissions" },
                 link: "/advanced-settings/roles/",
               },
               {
-                label: "Task types",
+                label: "Типы задач",
+                translations: { en: "Task types" },
                 link: "/advanced-settings/task-types/",
               },
               {
-                label: "Classes and enums",
+                label: "Классы и перечисления",
+                translations: { en: "Classes and enums" },
                 link: "/advanced-settings/classes-enums/",
               },
               {
-                label: "Text templates",
+                label: "Текстовые шаблоны",
+                translations: { en: "Text templates" },
                 link: "/advanced-settings/text-templates/",
               },
             ],
