@@ -50,8 +50,8 @@ jobs:
       - name: Build with Astro
         run: |
           pnpm astro build \
-            --site "https://haiodo.github.io" \
-            --base "/"
+            --site "https://haiodo.github.io/foundation-docs" \
+            --base "/foundation-docs/"
         working-directory: ${{ env.BUILD_PATH }}
       - name: Prepare Pages output
         run: |
