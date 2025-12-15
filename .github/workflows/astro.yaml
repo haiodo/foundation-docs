@@ -60,8 +60,8 @@ jobs:
           # If there's a CNAME file in the repo root, copy it into the dist so Pages uses custom domain
           if [ -f CNAME ]; then cp CNAME ${{ env.BUILD_PATH }}/dist/CNAME; fi
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ${{ env.BUILD_PATH }}/dist
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
