@@ -38,6 +38,10 @@ jobs:
         with:
           lfs: true
           fetch-depth: 0
+      - name: Fetch Git LFS objects
+        run: |
+          git lfs install --local
+          git lfs pull
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
