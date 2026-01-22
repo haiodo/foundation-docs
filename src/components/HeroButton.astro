@@ -1,0 +1,60 @@
+---
+interface Props {
+  text: string;
+  link: string;
+  icon?: string;
+  variant?: 'primary' | 'secondary';
+}
+
+const { text, link, icon = 'right-arrow', variant = 'primary' } = Astro.props;
+const base = import.meta.env.BASE_URL || '';
+const fullLink = `${base}${link}`.replace(/\/+/g, '/'); // Normalize slashes
+---
+
+<a 
+  href={fullLink}
+  class={`btn btn-${variant}`}
+  style={{
+    marginTop: '2rem',
+    marginBottom: '2rem',
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: '0.5rem',
+    padding: '0.75rem 1.5rem',
+    borderRadius: '0.5rem',
+    fontWeight: '600',
+    textDecoration: 'none',
+    transition: 'all 0.2s ease',
+    ...(variant === 'primary' 
+      ? {
+          backgroundColor: '#0070f3',
+          color: 'white',
+          border: '1px solid #0070f3',
+        } 
+      : {
+          backgroundColor: 'white',
+          color: '#0070f3',
+          border: '1px solid #0070f3',
+        }
+    ),
+  }}
+>
+  {text}
+  {icon === 'right-arrow' && (
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M5 12h14M12 5l7 7-7 7"/>
+    </svg>
+  )}
+</a>
+
+<style>
+  .btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 112, 243, 0.15);
+  }
+  
+  .btn:active {
+    transform: translateY(0);
+  }
+</style>

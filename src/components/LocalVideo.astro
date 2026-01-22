@@ -5,7 +5,8 @@ interface Props {
 }
 
 const { id } = Astro.props;
-const videoSrc = `/videos/${id}.mp4`;
+const base = import.meta.env.BASE_URL || '';
+const videoSrc = `${base}/videos/${id}.mp4`.replace(/\/+/g, '/'); // Normalize slashes
 ---
 
 <div class="local-video-container">

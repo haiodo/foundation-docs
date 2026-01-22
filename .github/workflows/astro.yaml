@@ -26,6 +26,7 @@ concurrency:
 
 env:
   BUILD_PATH: "." # default value when not using subfolders
+  SITE_BASE: "/foundation-docs"
   # BUILD_PATH: subfolder
 
 jobs:

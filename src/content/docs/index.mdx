@@ -6,22 +6,34 @@ hero:
   tagline: Платформа управления проектами с открытым исходным кодом
   image:
     file: ../../assets/foundation-logo.svg
-  actions:
-    - text: Начать работу
-      link: ru/getting-started/introduction-platform/
-      icon: right-arrow
-      variant: primary
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
+import HeroButton from '../../components/HeroButton.astro';
 
 ## Познакомьтесь с Foundation
 
-<CardGrid stagger>	
-	<Card title="Читайте документацию" icon="open-book">
-		Узнайте больше о Foundation в [документации](/ru/getting-started/introduction-platform).
-	</Card>
-	<Card title="Поставьте звезду на GitHub!" icon="github">
-		Поставьте нам звезду на <a href="https://github.com/hcengineering/platform" target="_blank" rel="noopener noreferrer">GitHub</a> — наша команда это ценит!
-	</Card>
+<HeroButton
+  text="Начать работу"
+  link="/ru/getting-started/introduction-platform/"
+  icon="right-arrow"
+  variant="primary"
+/>
+
+<CardGrid stagger>
+  <Card title="Читайте документацию" icon="open-book">
+    Узнайте больше о Foundation в
+    [документации](/ru/getting-started/introduction-platform).
+  </Card>
+  <Card title="Поставьте звезду на GitHub!" icon="github">
+    Поставьте нам звезду на{' '}
+    <a
+      href="https://github.com/haiodo/foundation"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      GitHub
+    </a>{' '}
+    — наша команда это ценит!
+  </Card>
 </CardGrid>
